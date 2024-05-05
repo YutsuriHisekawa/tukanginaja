@@ -1,0 +1,149 @@
+body{
+    overflow-x: hidden;
+}
+.box-shadow{
+    box-shadow: rgba(9, 61, 119, 0.1) 0px 8px 24px;
+}
+.color-base{
+    color: #093D77;
+}
+.color-child{
+    color: #14B6B8;
+}
+section{
+    padding-top:5rem;
+}
+.tab-blog{
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #093D77;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 3rem;
+}
+.tab-blog li{
+    text-align: center;
+    padding: 0.8rem;
+    width: 150px;
+}
+.tab-blog li:hover{
+    cursor: pointer;
+    background-color: #093D77;
+    color: #ffffff;
+}
+.input-group-blog{
+    border: 1px solid #093D77;
+    border-radius: 50px;
+    padding: 0.8rem;
+    font-size: 16px;
+}
+.wrap-blog{
+    border-radius: 20px;
+    background-color: #14B6B8;
+    overflow: hidden;
+    flex: 1;
+    margin: 2rem 0;
+    height: 300px;
+}
+.wrap-blog .wrap-blog-right{
+    background-image: url("../public/img/blog/blog01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrap-tab{
+    margin: 2rem 0;
+}
+.overflow-ellipsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+}
+.bg-card-blog{
+    background-image: url("../public/img/blog/blog-mask.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hover-blog:hover{
+    box-shadow: rgba(9, 61, 119, 0.1) 0px 8px 24px;
+    cursor: pointer;
+}
+.blog-content h2{
+    overflow: hidden;
+    height: 56px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.bg-card-promo{
+    background-image: url("../public/img/blog/blog-mask02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrap-blog-promo{
+    background-image: url("../public/img/blog/promo004.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left;  
+    background-position: bottom; 
+}
+.flying{
+    right: 3rem;
+    bottom: 3rem;
+    position: fixed;
+}
+.bg-flying-button {
+    background-image: url("../public/img/flying-button/bg-flying-button.png");
+    background-size: cover;
+    height: 100%;
+    margin-right: 0;
+    padding-right: 0;
+}
+.btn-social-media img{
+    width: 30px;
+    cursor: pointer;
+}
+.btn-social-media img:hover{
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.btn-social-media{
+    background-color: #fff;
+    margin: 0.75rem 0;
+}
+.wrap-tentang-kami{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../public/img/tentang_kami/bg-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero-tentang-kami{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap-kontak{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../public/img/kontak/bg-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero-kontak{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

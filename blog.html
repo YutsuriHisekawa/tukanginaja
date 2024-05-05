@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="public/img/logogram.png">
+    <link href="src/output.css" rel="stylesheet" />
+    <link href="src/custom.css" rel="stylesheet" />
+    <link href="src/animation.css" rel="stylesheet" />
+    <link href="src/font.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>TukanginAja.id</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="fixed w-screen bg-white border-gray-200 box-shadow">
+        <div class="w-11/12 flex flex-wrap items-center justify-between mx-auto p-4 px-0">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="public/svg/mainlogo.svg" class="h-8" alt="TukanginAja Logo" />
+            </a>
+            <!-- button -->
+            <button class="lg:hidden"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); toggleMobileMenu();"
+                aria-label="Main Menu">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                        stroke="#083D77" />
+                    <path class="line line2" d="M 20,50 H 80" stroke="#083D77" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                        stroke="#083D77" />
+                </svg>
+            </button>
+            <div class="hidden w-full lg:block lg:w-auto md:pt-5 lg:pt-0" id="navbar-default">
+                <ul
+                    class="flex flex-col space-y-1 lg:space-y-0 p-4 lg:p-0 mt-4 border-2 border-[#083D77] rounded-lg bg-gray-100 lg:flex-row lg:border-0 lg:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-white items-center">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="layanan.html"
+                            class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Layanan
+                            Kami</a>
+                    </li>
+                    <li>
+                        <a href="tentang_kami.html"
+                            class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Tentang
+                            Kami</a>
+                    </li>
+                    <li>
+                        <a href="blog.html"
+                            class="block py-2 px-3 text-[#14B6B8] font-semibold rounded md:bg-transparent md:p-0"
+                            aria-current="page">Blog</a>
+                    </li>
+                    <li>
+                        <a href="mitra.html"
+                            class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Jadi
+                            Mitra</a>
+                    </li>
+                    <li>
+                        <a href="kontak_kami.html"
+                            class="btn bg-[#093D77] font-semibold text-white border-0 hover:bg-[#1960AF]">Kontak
+                            Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="w-11/12 mx-auto sans3">
+            <h4 class="text-[45px] font-bold mt-5">Ada Apa di <span class="color-child">TukanginAja.id</span>?</h4>
+            <p class="text-[22px]">Berita seru, tips menarik, dan promo terbaru. Baca semua artikel soal <span
+                    class="color-child">TukanginAja.id</span> di sini.</p>
+            <div class="flex flex-col lg:flex-row justify-between w-100 align-center wrap-tab">
+                <ul class="w-3/6 list-none flex flex-row justify-between tab-blog">
+                    <li><a>Semua</a></li>
+                    <li><a>Berita</a></li>
+                    <li><a>Tips</a></li>
+                    <li><a>Promo</a></li>
+                    <li><a>Media Sosial</a></li>
+                </ul>
+                <div
+                    class="w-full md:w-3/6 relative rounded-full border border-[#093D77] overflow-hidden flex items-center">
+                    <input type="text" name="price" id="price"
+                        class="h-auto px-5 block w-full outline-none bg-transparent" placeholder="Cari">
+                    <div id="searchIcon"
+                        class="pointer-events-auto absolute inset-y-0 px-5 right-0 flex items-center bg-[#093D77] cursor-pointer">
+                        <span class="text-white">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="flex justify-between w-100 align-center wrap-blog">
+                <div class="w-2/5 flex flex-col justify-between bg-[#14B6B8] p-5">
+                    <h6 class="w-fit px-3 py-2 text-white bg-[#ffffff] bg-opacity-25 rounded-[10px] mb-0 sans3">Tips
+                    </h6>
+                    <h1 class="text-white text-[26px] sans3">6 Cara Pencegahan Agar AC Tidak Mudah Rusak</h1>
+                    <p class="text-white text-[14px] overflow-ellipsis sans3">Berada di negara tropis seperti Indonesia
+                        memang membuat banyak orang memilih untuk memasang
+                        AC di rumahnya. Penggunaan AC atau Air Conditioner ini bertujuan untuk menghilangkan . . . .</p>
+                    <a class="flex align-center mt-4">
+                        <div class="h-30 w-30 p-3 bg-[#093D77] rounded-full flex justify-center align-items-center">
+                            <i class="fas fa-arrow-right text-[12px] text-white"></i>
+                        </div>
+                        <span class="text-white text-[14px] ml-3 self-center sans3">Baca Selengkapnya</span>
+                    </a>
+                </div>
+                <div class="w-3/5 wrap-blog-right">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog-content">
+        <div class="w-full md:w-11/12 mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="rounded-[20px] bg-white rounded-lg overflow-hidden hover-blog border border-gray-300">
+                    <img src="public/img/blog/blog02.png" alt="Gambar Artikel 1" class="w-full h-48 object-cover">
+                    <div class="bg-card-blog p-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <h6 class="py-2 px-3 text-white bg-[#093D77] text-14px rounded-[10px] mb-0">Tips</h6>
+                            <div class="flex items-center">
+                                <a class="flex items-center">
+                                    <div class="w-9 h-9 p-1 bg-[#093D77] rounded-full overflow-hidden">
+                                        <img src="public/img/blog/user001.jpg" class="w-full h-full object-cover"
+                                            alt="Nama Penulis">
+                                    </div>
+                                    <span class="text-[#333] text-[14px] ml-3">Yayan</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="text-[20px] font-semibold text-gray-900 mb-2">
+                                5 Cara Aman Cegah Korsleting Listrik</h2>
+                            <span class="text-[14px] text-[#858585]">01 Sep 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-[20px] bg-white rounded-lg overflow-hidden hover-blog border border-gray-300">
+                    <img src="public/img/blog/blog03.png" alt="Gambar Artikel 1" class="w-full h-48 object-cover">
+                    <div class="bg-card-blog p-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <h6 class="py-2 px-3 text-white bg-[#093D77] text-14px rounded-[10px] mb-0">Tips</h6>
+                            <div class="flex items-center">
+                                <a class="flex items-center">
+                                    <div class="w-9 h-9 p-1 bg-[#093D77] rounded-full overflow-hidden">
+                                        <img src="public/img/blog/user002.jpg" class="w-full h-full object-cover"
+                                            alt="Nama Penulis">
+                                    </div>
+                                    <span class="text-[#333] text-[14px] ml-3">Yayan</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="text-[20px] font-semibold text-gray-900 mb-2">
+                                Diduga Proyek Galian Pipa PDAM Dikerjakan Tidak SOP</h2>
+                            <span class="text-[14px] text-[#858585]">01 Sep 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-[20px] bg-white rounded-lg overflow-hidden hover-blog border border-gray-300">
+                    <img src="public/img/blog/blog04.png" alt="Gambar Artikel 1" class="w-full h-48 object-cover">
+                    <div class="bg-card-blog p-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <h6 class="py-2 px-3 text-white bg-[#093D77] text-14px rounded-[10px] mb-0">Tips</h6>
+                            <div class="flex items-center">
+                                <a class="flex items-center">
+                                    <div class="w-9 h-9 p-1 bg-[#093D77] rounded-full overflow-hidden">
+                                        <img src="public/img/blog/user003.jpg" class="w-full h-full object-cover"
+                                            alt="Nama Penulis">
+                                    </div>
+                                    <span class="text-[#333] text-[14px] ml-3">Yayan</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="text-[20px] font-semibold text-gray-900 mb-2">
+                                Tips Sederhana Dalam Memelihara Peralatan Listrik</h2>
+                            <span class="text-[14px] text-[#858585]">01 Sep 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="flex bg-[#093D77] text-white hover:bg-[#06366C] text-[18px] p-5 mt-7 rounded-[20px] mx-auto">Tampilkan
+                Semua</button>
+        </div>
+    </section>
+    <section>
+        <div class="w-11/12 mx-auto">
+            <h1 class="mx-auto text-[36px] text-center font-semibold my-5">Promo Menarik Hari Ini</h1>
+            <div class="flex justify-center my-7">
+                <div
+                    class="w-full md:w-3/4 lg:w-2/4 flex flex-col text-white p-5 overflow-hidden bg-[#093D77] wrap-blog-promo rounded-[20px]">
+                    <p class="text-[18px]">Promo Agustus Ceria</p>
+                    <h3 class="text-[26px] font-bold">Dapatkan Diskon hingga 70%</h3>
+                    <p class="text-gray-900 w-fit px-4 py-1 my-2 rounded-full bg-white text-lg md:text-xl lg:text-2xl">
+                        Makin Hemat, Pilihan Cermat!</p>
+                    <a class="flex align-items-center mt-7">
+                        <div
+                            class="h-30 w-30 p-3 bg-[#FFA31D] hover:bg-[#EF920A] rounded-full flex justify-center align-items-center">
+                            <i class="fas fa-arrow-right text-[12px] text-white"></i>
+                        </div>
+                        <span class="text-white text-[14px] ml-3 self-center">Baca Syarat dan Ketentuan</span>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="overflow-hidden bg-[#093D77] rounded-[20px]">
+                    <div class="flex flex-row text-left text-white bg-card-promo p-5">
+                        <div class="w-full md:w-3/4">
+                            <h3 class="text-[26px] font-bold">KHUSUS DAERAH SURABAYA</h3>
+                            <p class="text-[14px] my-3">Dapatkan promo di setiap hari Rabu dan Minggu di Aplikasi
+                                TukanginAja.id!</p>
+                        </div>
+                        <div class="w-1/4">
+                            <img src="public/img/blog/promo01.png">
+                        </div>
+                    </div>
+                    <div class="flex align-items-center justify-between bg-[#FFA31D] p-5 text-white text-[14px]">
+                        <span>Syarat dan Ketentuan</span>
+                        <i class="fas fa-arrow-right text-[12px] text-white self-center"></i>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-[#093D77] rounded-[20px]">
+                    <div class="flex flex-row text-left text-white bg-card-promo p-5">
+                        <div class="w-full md:w-3/4">
+                            <h3 class="text-[26px] font-bold">KHUSUS DAERAH SURABAYA</h3>
+                            <p class="text-[14px] my-3">Dapatkan promo di setiap hari Rabu dan Minggu di Aplikasi
+                                TukanginAja.id!</p>
+                        </div>
+                        <div class="w-1/4">
+                            <img src="public/img/blog/promo02.png">
+                        </div>
+                    </div>
+                    <div class="flex align-items-center justify-between bg-[#FFA31D] p-5 text-white text-[14px]">
+                        <span>Syarat dan Ketentuan</span>
+                        <i class="fas fa-arrow-right text-[12px] text-white self-center"></i>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-[#093D77] rounded-[20px]">
+                    <div class="flex flex-row text-left text-white bg-card-promo p-5">
+                        <div class="w-full md:w-3/4">
+                            <h3 class="text-[26px] font-bold">KHUSUS DAERAH SURABAYA</h3>
+                            <p class="text-[14px] my-3">Dapatkan promo di setiap hari Rabu dan Minggu di Aplikasi
+                                TukanginAja.id!</p>
+                        </div>
+                        <div class="w-1/4">
+                            <img src="public/img/blog/promo03.png">
+                        </div>
+                    </div>
+                    <div class="flex align-items-center justify-between bg-[#FFA31D] p-5 text-white text-[14px]">
+                        <span>Syarat dan Ketentuan</span>
+                        <i class="fas fa-arrow-right text-[12px] text-white self-center"></i>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="flex bg-[#093D77] text-white hover:bg-[#06366C] text-[18px] p-5 mt-7 rounded-[20px] mx-auto">Tampilkan
+                Semua</button>
+        </div>
+    </section>
+    <section class="pb-10 md:pb-20">
+        <div class="container mx-auto">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold mt-5 text-center">Kunjungi Media Sosial <span
+                    class="text-[#093D77]">TukanginAja.id</span></h1>
+            <p class="text-lg md:text-xl text-center">Dapatkan informasi ter-up to date melalui media sosial kami</p>
+
+            <div class="flex flex-wrap justify-center items-center my-6">
+                <img src="public/img/blog/ig01.png" class="w-1/3 md:w-auto mx-2 my-2 md:my-0" />
+                <img src="public/img/blog/ig02.png" class="w-1/3 md:w-auto mx-2 my-2 md:my-0" />
+                <img src="public/img/blog/ig03.png" class="w-1/3 md:w-auto mx-2 my-2 md:my-0" />
+            </div>
+            <div class="flex justify-center mt-7">
+                <img src="public/img/blog/ig04.png" class="w-1/4 md:w-1/5 lg:w-1/6" />
+            </div>
+        </div>
+    </section>
+    <!---FOOTER-->
+    <footer class="footer py-[6rem] bg-[#093D77] sans3 text-white">
+        <div class="w-11/12 mx-auto flex flex-col lg:flex-row justify-between">
+            <aside class="flex flex-col lg:flex-row lg:space-x-2">
+                <div class="items-start mt-[-10px]">
+                    <img src="public/svg/logo-footer.svg" class="h-[50px]" />
+                </div>
+
+                <div class="h-full text-white flex flex-col text-start">
+                    <h6 class="text-white text-2xl font-semibold text-center">
+                        TukanginAja.id
+                    </h6>
+                    <div>
+                        <ul class="list-none">
+                            <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tentang
+                                    Kami</a></li>
+                            <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div>
+                <h6 class="text-2xl font-semibold">Kategori</h6>
+                <ul class="list-none">
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tukang Ac</a></li>
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Massege</a></li>
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tukang Listrik</a></li>
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Lainnya</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="text-2xl font-semibold">Menjadi Mitra</h6>
+                <ul class="list-none">
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Cara Menjadi Mitra</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="text-2xl font-semibold">Hubungi Kami</h6>
+                <ul class="list-none">
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Kontak Kami</a></li>
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Kebijakan Privasi</a>
+                    </li>
+                </ul>
+            </div>
+    </footer>
+    <div class="w-full py-2">
+        <div
+            class="w-11/12 mx-auto flex flex-col lg:flex-row flex-row-reverse flex-col-reverse justify-between text-[#7C7C7C] items-start lg:items-center">
+            <h1 class="font-semibold py-1 text-black text-[12px]">
+                Copyright © 2024 PT Joyo Sejahtera Sentosa Ekaprima.
+                <span class="font-normal">All rights reserved.</span>
+            </h1>
+            <div class="flex justify-start lg:justify-end items-center mb-3 lg:mb-0">
+                <a class="btn-social-media hover:bg-transparent pl-0">
+                    <img src="public/svg/social-media/social-media-wa.svg" />
+                </a>
+                <a class="btn-social-media hover:bg-transparent pl-2">
+                    <img src="public/svg/social-media/social-media-ig.svg" />
+                </a>
+                <a class="btn-social-media hover:bg-transparent pl-2">
+                    <img src="public/svg/social-media/social-media-fb.svg" />
+                </a>
+                <a class="btn-social-media hover:bg-transparent pl-2">
+                    <img src="public/svg/social-media/social-media-tt.svg" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-row flying items-center hover:opacity-100 opacity-95 cursor-pointer">
+        <div class="hidden mr-[-20px] rounded-full bg-white p-4 h-max box-shadow z-10 md:flex">
+            <img src="public/img/message-typing.png" width="30px" height="30px" alt="Message Typing Icon" />
+            <span class="ml-3 self-center text-[16px]">Butuh Bantuan</span>
+        </div>
+        <div class="hidden mr-5 w-[25px] h-[25px] rounded bg-white rotate-45 md:flex"></div>
+        <div class="rounded-full bg-white p-4 box-shadow">
+            <img src="public/img/cs.png" width="50px" alt="Customer Service Icon" />
+        </div>
+    </div>
+    <!---END FOOTER-->
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="script/home.js"></script>
+<script src="script/navbar.js"></script>
+
+</html>

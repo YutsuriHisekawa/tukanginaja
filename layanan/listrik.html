@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../logo.svg" type="image/svg+xml" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <link href="../src/font.css" rel="stylesheet" />
+    <link href="../src/animation.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>TukanginAja.id</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="bg-white border-gray-200 fixed w-screen z-[99]">
+        <div class="w-11/12 flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="../public/svg/logo.svg" class="h-8" alt="TukanginAja Logo" />
+                <span class="self-center text-2xl whitespace-nowrap sans3 text-[#083D77] font-bold">Tukangin<span
+                        class="text-[#14B6B8]">Aja</span></span>
+            </a>
+            <!-- button -->
+            <button class="lg:hidden"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); toggleMobileMenu();"
+                aria-label="Main Menu">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                        stroke="#083D77" />
+                    <path class="line line2" d="M 20,50 H 80" stroke="#083D77" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                        stroke="#083D77" />
+                </svg>
+            </button>
+            <div class="hidden w-full lg:block lg:w-auto md:pt-5 lg:pt-0" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col space-y-1 lg:space-y-0 p-4 lg:p-0 mt-4 border-2 border-[#083D77] rounded-lg bg-gray-100 lg:flex-row lg:border-0 lg:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-white items-center">
+                    <li>
+                        <a href="../index.html"
+                            class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="../layanan.html"
+                            class="block py-2 px-3 text-[#14B6B8] rounded md:bg-transparent md:p-0 font-semibold">Layanan
+                            Kami</a>
+                    </li>
+                    <li>
+                        <a href="../#"
+                            class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Tentang
+                            Kami</a>
+                    </li>
+                    <li>
+                        <a href="../blog.html"
+                            class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Blog</a>
+                    </li>
+                    <li>
+                        <a href="../mitra.html"
+                            class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Jadi
+                            Mitra</a>
+                    </li>
+                    <li>
+                        <a href="../#" class="btn bg-[#093D77] text-white border-0 hover:bg-[#1960AF]">Kontak Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- BODY -->
+    <main class="relative overflow-hidden bg-white pb-12 pt-20 sm:pb-16 sm:pt-32 lg:pb-24 xl:pb-32 xl:pt-32 sans3">
+        <div class="relative z-20 mx-auto w-full px-6 lg:px-8">
+            <div class="relative mx-auto mw-full" data-aos="fade-up">
+                <img class="w-full rounded-2xl" src="src/svg/listrik.svg" alt="" />
+            </div>
+            <div class="mx-auto max-w-2xl text-center mt-16" data-aos="fade-up">
+                <h1 class="text-4xl font-bold tracking-tight text-[#093D77] sans3 sm:text-6xl">
+                    TUKANG LISTRIK
+                </h1>
+                <div class="flex items-center justify-center space-x-10 mt-3">
+                    <div class="flex items-center space-x-2">
+                        <img src="src/svg/popular.svg" alt="">
+
+                        <p class="mt-1 text-lg leading-8 text-[#14B6B8] sans3">Populer</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="src/svg/sertifikasi.svg" alt="">
+
+                        <p class="mt-1 text-lg leading-8 text-[#14B6B8] sans3">
+                            Bersertifikasi
+                        </p>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <img src="src/svg/star.svg" alt="">
+                        <p class="mt-1 text-lg leading-8 text-[#14B6B8] sans3">4.9</p>
+                    </div>
+                </div>
+                <div class="border-2 border-[#093D77] mt-2 rounded-2xl bg-white/70">
+                    <p class="text-xl mx-auto my-5 text-black sans3 p-4">
+                        Anda mencari solusi listrik yang handal dan aman untuk rumah atau kantor Anda? Dengan jasa
+                        layanan tukang listrik
+                        kami, Anda tidak perlu khawatir lagi! Kami menyediakan layanan profesional dengan keahlian
+                        tinggi untuk memenuhi
+                        semua kebutuhan listrik Anda. Mulai dari instalasi, pemeliharaan, hingga perbaikan, kami siap
+                        membantu Anda
+                        mendapatkan solusi listrik yang tepat.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- tukang ac kami bisa ngapain -->
+        <div class="p-4 mt-16 ">
+            <div class="max-w-7xl mx-auto h-max px-6 md:px-12 xl:px-6">
+                <div class="lg:w-full">
+                    <h2 class="my-8 text-2xl font-bold text-center md:text-4xl sans3" data-aos="fade-up">
+                        Tukang Listrik di <span class="text-[#14B6B8]">TukanginAja.id</span> Bisa
+                        Ngapain aja ya ?
+                    </h2>
+                </div>
+                <div
+                    class="mt-10 grid divide-x divide-y divide-[#14B6B8] shadow-2xl overflow-hidden rounded-3xl text-gray-600 sm:grid-cols-1 lg:grid-cols-5 lg:divide-y-0 xl:grid-cols-5">
+                    <div class="group relative bg-[#2C66A6] duration300 transition " data-aos="fade-up">
+                        <div class="relative space-y-8 py-12 p-8">
+                            <img src="src/svg/listrik/instalasi.svg" alt="">
+
+                            <div class="space-y-2 sans3">
+                                <h5 class="text-xl font-semibold text-white ">
+                                    Instalasi Listrik
+                                </h5>
+                                <p class="text-white">
+                                    Pemasangan listrik bagi rumah Anda yang belum memiliki aliran listrik. Tukang kami
+                                    dapat membantu dalam memasang kabel, saklar, stop kontak, dan peralatan listrik
+                                    lainnya dengan presisi, baik dan aman.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative bg-[#13D2D4] duration300 transition " data-aos="fade-up">
+                        <div class="relative space-y-8 py-12 p-8">
+                            <img src="src/svg/listrik/listrik.svg" alt="">
+
+                            <div class="space-y-2 sans3">
+                                <h5 class="text-xl font-semibold text-white ">
+                                    Pemeliharaan Listrik
+                                </h5>
+                                <p class="text-white">
+                                    Tanpa disadari sistem listrik Anda juga memerlukan pemeliharaan rutin. Tukang
+                                    listrik kami dapat memeriksa dan merawat sistem listrik Anda, memastikan semua
+                                    komponen tetap dalam kondisi optimal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative bg-[#2C66A6] transition " data-aos="fade-up">
+                        <div class="relative space-y-8 py-12 p-8">
+
+                            <img src="src/svg/listrik/lampu.svg ">
+                            <div class=" space-y-2">
+                                <h5 class="text-xl font-semibold text-white transition ">
+                                    Pemasangan Lampu
+                                </h5>
+                                <p class="text-white">
+                                    Lampu tidak tidak menyala? Tukang listrik kami dapat membantu Anda memilih dan
+                                    memasang
+                                    lampu yang sesuai dengan kebutuhan dan gaya dekorasi Anda.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative bg-[#13D2D4] duration300 transition " data-aos="fade-up">
+                        <div class="relative space-y-8 py-12 p-8">
+                            <img src="src/svg/listrik/perbaikan.svg" alt="">
+
+                            <div class="space-y-2 sans3">
+                                <h5 class="text-xl font-semibold text-white transition">
+                                    Perbaikan
+                                </h5>
+                                <p class="text-white">
+                                    Listrik Anda mengalami masalah? Jangan khawatir. Tukang kami handal dalam
+                                    mengidentifikasi dan memperbaiki gangguan atau kerusakan pada sistem listrik Anda,
+                                    memastikan rumah Anda kembali aman dan nyaman.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative bg-[#2C66A6] duration300 transition " data-aos="fade-up">
+                        <div class="relative space-y-8 py-12 p-8">
+
+                            <img src="src/svg/listrik/perawatan.svg" alt="">
+                            <div class="space-y-2 sans3">
+                                <h5 class="text-xl font-semibold text-white transition ">
+                                    Perawatan panel listrik
+                                </h5>
+                                <p class="text-white">
+                                    Panel listrik adalah jantung dari sistem listrik Anda. Tukang listrik kami membantu
+                                    Anda
+                                    dalam memasang dan merawatnya, memastikan distribusi listrik yang efisien dan aman
+                                    ke
+                                    seluruh rumah atau bangunan Anda.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tukang persiapan -->
+        <section>
+            <div class="md:w-full lg:w-full mt-16 ">
+                <div class="w-full">
+                    <div class="flex justify-center">
+                        <div class="container grid grid-cols-1 xl:grid-cols-2 w-full place-content-center p-4">
+                            <div class="w-full">
+                                <h1 class="text-center font-semibold text-2xl xl:text-4xl sans3" data-aos="fade-up">
+                                    Ini yang harus disiapkan oleh
+                                    <span class="text-[#14B6B8]">Tukang</span>
+                                </h1>
+                                <div class="h-full grid grid-cols-3 lg:grid-cols-3 place-content-center gap-5">
+                                    <div class="flex justify-center flex-col text-center space-y-3" data-aos="fade-up">
+                                        <img src="src/svg/listrik/wattmeter.svg" alt="" class="h-[85px] md:h-[120px]" />
+                                        <h1 class="sans3 xl:text-xl font-semibold">Wattmeter</h1>
+                                    </div>
+                                    <div class="flex justify-center flex-col text-center space-y-3" data-aos="fade-up">
+                                        <img src="src/svg/listrik/sarungtanga.svg" alt=""
+                                            class="h-[85px] md:h-[120px]" />
+                                        <h1 class="sans3 text-xl font-semibold">Sarung Tangan</h1>
+                                    </div>
+                                    <div class="flex justify-center flex-col text-center space-y-3" data-aos="fade-up">
+                                        <img src="src/svg/listrik/tang.svg" alt="" class="h-[85px] md:h-[120px]" />
+                                        <h1 class="sans3 text-xl font-semibold">Tang</h1>
+                                    </div>
+                                    <div class="flex justify-center flex-col text-center space-y-3" data-aos="fade-up">
+                                        <img src="src/svg/listrik/stripper.svg" alt="" class="h-[85px] md:h-[120px]" />
+                                        <h1 class="sans3 text-xl font-semibold">Stripper kawat</h1>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-center space-y-3 "
+                                        data-aos="fade-up">
+                                        <img src="src/svg/listrik/kabel.svg" alt=""
+                                            class="md:h-[120px] h-[85px] md:w-[120px]" />
+                                        <h1 class="sans3 text-xl font-semibold">Kabel</h1>
+                                    </div>
+                                    <div class="flex justify-center flex-col text-center space-y-3" data-aos="fade-up">
+                                        <img src="src/svg/listrik/lampusenter.svg" alt=""
+                                            class="h-[85px] md:h-[120px]" />
+                                        <h1 class="sans3 text-xl font-semibold">Senter</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hidden xl:flex justify-center" data-aos="fade-left">
+                                <img src="src/svg/tukang.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end tukang persiapan -->
+
+
+            <!-- END  TUKANG SIAP -->
+
+            <!-- pelanggan siap -->
+            <div class="md:w-full lg:w-full mt-16">
+                <div class="w-full">
+                    <div class="flex justify-center">
+                        <div class="container grid grid-cols-1 xl:grid-cols-2 w-full place-content-center p-4">
+                            <div class="hidden xl:flex justify-center">
+                                <img src="src/svg/pelanggan.svg" alt="" data-aos="fade-right" />
+                            </div>
+                            <div class="w-full">
+                                <h1 class="text-center font-semibold text-2xl xl:text-4xl sans3" data-aos="fade-up">
+                                    Ini yang harus disiapkan oleh
+                                    <span class="text-[#14B6B8]">Pelanggan</span>
+                                </h1>
+                                <div class="h-full grid grid-cols-3 lg:grid-cols-3">
+                                    <div class="flex justify-center flex-col text-center space-y-3" data-aos="fade-up">
+                                        <img src="src/svg/listrik/tangga.svg" alt="" class="h-[85px]" />
+                                        <h1 class="sans3 text-xl font-semibold">Tangga</h1>
+                                    </div>
+                                    <div class="flex justify-center flex-col text-center space-y-3" data-aos="fade-up">
+                                        <img src="src/svg/listrik/stopkontak.svg" alt="" class="h-[85px]" />
+                                        <h1 class="sans3 text-xl font-semibold">Stop kontak</h1>
+                                    </div>
+                                    <div class="flex justify-center flex-col text-center space-y-3" data-aos="fade-up">
+                                        <img src="src/svg/listrik/kantongplastik.svg" alt="" class="h-[85px]" />
+                                        <h1 class="sans3 text-xl font-semibold">Kantong Plastik</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end pelanggan -->
+
+            <div class="flex justify-center mt-24 xl:mt-16" data-aos="fade-up">
+                <a href=""
+                    class="bg-[#093D77] p-4 sans3 font-semibold shadow-xl rounded-3xl text-white hover:bg-[#093D77] duration-300">
+                    <button class="text-lg xl:text-2xl">Pesan Sekarang !</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- Cerita Kami -->
+        <section class="w-full p-0 bg-white md:p-0 mt-[15rem]" data-aos="fade-up">
+            <h1 class="text-center text-black fontabout  font-semibold text-6xl">
+                Cerita <span class="text-[#14B6B8]"> Mereka</span>
+            </h1>
+            <!-- testi  swipper-->
+
+            <section class="h-full bg-white pt-14 xl:pt-20 2xl:pt-10 sans3">
+
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-14">
+                            <div class="rounded-2xl h-[30rem] bg-white shadow-lg shadow-[#14B6B8]">
+                                <div class="p-5 h-1/2">
+                                    <div class="w-1/2 h-full">
+                                        <div class="w-[10rem] absolute">
+                                            <img src="../public/svg/hero/ceritamereka/coment.svg" alt="" class="" />
+                                        </div>
+                                        <div class="w-1/2 absolute h-auto pt-[10%]">
+                                            <img src="../public/svg/hero/ceritamereka/star.svg" />
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="h-full flex flex-col items-center justify-center">
+                                            <div class="space-y-3">
+                                                <h2 class="card-title text-3xl">Agus Sanjaya</h2>
+                                                <p class="text-start text-lg">
+                                                    “Pelayanannya sangat memuaskan. Taman saya menjadi
+                                                    cantik dan indah, saya akan merekomendasi-kan
+                                                    tukanginaja.id ini ke semua orang. Terima kasih banyak
+                                                    atas jasanya!"
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex justify-end h-1/2">
+                                        <div>
+                                            <img src="../public/svg/hero/ceritamereka/coment2.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-14">
+                            <div class="rounded-2xl h-[30rem] bg-white shadow-lg shadow-[#14B6B8]">
+                                <div class="p-5 h-1/2">
+                                    <div class="w-1/2 h-full">
+                                        <div class="w-[10rem] absolute">
+                                            <img src="../public/svg/hero/ceritamereka/coment.svg" alt="" class="" />
+                                        </div>
+                                        <div class="w-1/2 absolute h-auto pt-[10%]">
+                                            <img src="../public/svg/hero/ceritamereka/star.svg" />
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="h-full flex flex-col items-center justify-center">
+                                            <div class="space-y-3">
+                                                <h2 class="card-title text-3xl">Arjuna Wira</h2>
+                                                <p class="text-start text-lg">
+                                                    “Hasilnya memuaskan! Semua orang wajib menggunakan
+                                                    layanan dari tukanginaja.id. Saya akan memberitau
+                                                    teman-teman saya. Terima kasih banyak atas
+                                                    pelayanannya!"
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex justify-end h-1/2">
+                                        <div>
+                                            <img src="../public/svg/hero/ceritamereka/coment2.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-14">
+                            <div class="rounded-2xl h-[30rem] bg-white shadow-lg shadow-[#14B6B8]">
+                                <div class="p-5 h-1/2">
+                                    <div class="w-1/2 h-full">
+                                        <div class="w-[10rem] absolute">
+                                            <img src="../public/svg/hero/ceritamereka/coment.svg" alt="" class="" />
+                                        </div>
+                                        <div class="w-1/2 absolute h-auto pt-[10%]">
+                                            <img src="../public/svg/hero/ceritamereka/star.svg" />
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="h-full flex flex-col items-center justify-center">
+                                            <div class="space-y-3">
+                                                <h2 class="card-title text-3xl">Salma Apriliana</h2>
+                                                <p class="text-start text-lg">
+                                                    “Saya senang bisa menemukan tukang yang saya butuh kan
+                                                    dengan cepat dan bagus. Saya tidak ragu untuk
+                                                    merekomendasikan layanan mereka kepada teman-teman saya.
+                                                    Terima kasih banyak atas jasanya!"
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex justify-end h-1/2">
+                                        <div>
+                                            <img src="../public/svg/hero/ceritamereka/coment2.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-14">
+                            <div class="rounded-2xl h-[30rem] bg-white shadow-lg shadow-[#14B6B8]">
+                                <div class="p-5 h-1/2">
+                                    <div class="w-1/2 h-full">
+                                        <div class="w-[10rem] absolute">
+                                            <img src="../public/svg/hero/ceritamereka/coment.svg" alt="" class="" />
+                                        </div>
+                                        <div class="w-1/2 absolute h-auto pt-[10%]">
+                                            <img src="../public/svg/hero/ceritamereka/star.svg" />
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="h-full flex flex-col items-center justify-center">
+                                            <div class="space-y-3">
+                                                <h2 class="card-title text-3xl">Mahalini</h2>
+                                                <p class="text-start text-lg">
+                                                    “Hasilnya luar biasa memuaskan!!! Semua orang wajib
+                                                    menggunakan layanan dari tukanginaja.id. Terima kasih
+                                                    banyak atas pelayanan nya! Saya akan menggunakannya lagi
+                                                    di lain waktu. Sukses terus untuk tukanginaja.id"
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex justify-end h-1/2">
+                                        <div>
+                                            <img src="../public/svg/hero/ceritamereka/coment2.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- end testi swipper -->
+        </section>
+    </main>
+
+    <!-- END BODY -->
+
+
+
+    <!--  FOOTER  DESKTOP -->
+    <footer class="footer py-[6rem] hidden lg:flex justify-around bg-[#093D77] sans3 text-white">
+        <aside class="flex space-x-3 lg:space-x-2">
+            <div class="items-start">
+                <img src="../logo.svg" class="h-[50px]" />
+            </div>
+
+            <div class="h-full text-white space-y-5 flex flex-col text-start">
+                <h1 class="text-white text-3xl font-semibold text-center mt-2">
+                    TukanginAja.id
+                </h1>
+                <div>
+                    <p class="text-xl">Tentang Kami</p>
+                    <p class="text-xl">Blog</p>
+                </div>
+            </div>
+        </aside>
+
+        <nav>
+            <h6 class="text-2xl font-semibold">Kategori</h6>
+            <a class="link link-hover">Tukang Ac</a>
+            <a class="link link-hover">Massege</a>
+            <a class="link link-hover">Tukang Listrik</a>
+            <a class="link link-hover">Lainya</a>
+        </nav>
+        <nav>
+            <h6 class="text-2xl font-semibold">Kategori</h6>
+            <a class="link link-hover">Tukang Ac</a>
+            <a class="link link-hover">Massege</a>
+            <a class="link link-hover">Tukang Listrik</a>
+            <a class="link link-hover">Lainya</a>
+        </nav>
+        <nav>
+            <h6 class="text-2xl font-semibold">Kategori</h6>
+            <a class="link link-hover">Tukang Ac</a>
+            <a class="link link-hover">Massege</a>
+            <a class="link link-hover">Tukang Listrik</a>
+            <a class="link link-hover">Lainya</a>
+        </nav>
+    </footer>
+    <div class="w-full bg-white justify-center hidden lg:flex">
+        <div class="container flex justify-between text-[#7C7C7C] h-full items-center">
+            <h1 class="font-semibold text-xl py-2 text-black lg:text-sm xl:text-lg">
+                Copyright © 2023 PT JOYO SEJAHTERA SENTOSA EKAPRIMA.
+                <span class="font-thin">All rights reserved.</span>
+            </h1>
+            <div class="h-full items-center flex p-3 space-x-5">
+                <a
+                    href="https://wa.me/+628113288966?text=Halo%20kak,%20saya%20ingin%20bertanya-tanya%20mengenai%20TukanginAja">
+                    <button class="btn btn-ghost hover:bg-transparent">
+                        <img src="../public/svg/footer/wa.svg" class="lg:h-1/2 xl:h-full" />
+                    </button>
+                </a>
+                <a href="https://www.instagram.com/tukanginajaid?igsh=d2o1OWZ6ZHIyMGIz">
+                    <button class="btn btn-ghost hover:bg-transparent">
+                        <img src="../public/svg/footer/ig.svg" class="lg:h-1/2 xl:h-full" /></button></a>
+                <a href="https://www.facebook.com/profile.php?id=61553346410387">
+                    <button class="btn btn-ghost hover:bg-transparent">
+                        <img src="../public/svg/footer/fb.svg" class="lg:h-1/2 xl:h-full" /></button></a>
+                <a href="https://www.tiktok.com/@tukanginaja">
+                    <button class="btn btn-ghost hover:bg-transparent">
+                        <img src="../public/svg/footer/tiktok.svg" class="lg:h-1/2 xl:h-full" /></button></a>
+            </div>
+        </div>
+    </div>
+    <!--  END FOOTER DESKTOP -->
+
+    <!-- FOOTER MOBILE  -->
+    <footer class="bg-[#093D77] sans3 lg:hidden block">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-3">
+                        <img src="../logo.svg" class="h-[50px]" />
+                        <span
+                            class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">TukanginAja</span>
+                    </div>
+                    <div class="h-full my-5">
+                        <a href="#" class="hover:underline text-white">
+                            <h1 class="text-2xl text-white font-semibold">Tentang Kami</h1>
+                        </a>
+                        <a href="#" class="hover:underline text-white">
+                            <h1 class="text-2xl text-white font-semibold">Blog</h1>
+                        </a>
+                    </div>
+                </div>
+                <hr class="py-5" />
+                <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
+                            Kategori
+                        </h2>
+                        <ul class="text-white font-normal space-y-2">
+                            <li>
+                                <a href="#" class="hover:underline">
+                                    <p>Tukang Ac</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="hover:underline">
+                                    <p>Massege</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">
+                                    <p>Lainya</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
+                            Kategori
+                        </h2>
+                        <ul class="text-white font-normal space-y-2">
+                            <li>
+                                <a href="#" class="hover:underline">
+                                    <p>Tukang Ac</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="hover:underline">
+                                    <p>Massege</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">
+                                    <p>Lainya</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
+                            Kategori
+                        </h2>
+                        <ul class="text-white font-normal space-y-2">
+                            <li>
+                                <a href="#" class="hover:underline">
+                                    <p>Tukang Ac</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="hover:underline">
+                                    <p>Massege</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">
+                                    <p>Lainya</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:flex sm:items-center sm:justify-between bg-white p-4 md:flex-col">
+            <span class="flex justify-center text-[11px] md:text-xl text-black font-semibold">Copyright © 2023 PT JOYO
+                SEJAHTERA SENTOSA EKAPRIMA.
+                <span class="font-thin">All rights reserved.</span>
+            </span>
+            <div class="flex mt-4 justify-center">
+                <a
+                    href="https://wa.me/+628113288966?text=Halo%20kak,%20saya%20ingin%20bertanya-tanya%20mengenai%20TukanginAja">
+                    <button class="btn btn-ghost hover:bg-transparent">
+                        <img src="../public/svg/footer/wa.svg" class="h-[2.5rem]" />
+                    </button>
+                </a>
+                <a href="https://www.instagram.com/tukanginajaid?igsh=d2o1OWZ6ZHIyMGIz">
+                    <button class="btn btn-ghost hover:bg-transparent">
+                        <img src="../public/svg/footer/ig.svg" class="h-[2.5rem]" /></button></a>
+                <a href="https://www.facebook.com/profile.php?id=61553346410387">
+                    <button class="btn btn-ghost hover:bg-transparent">
+                        <img src="../public/svg/footer/fb.svg" class="h-[2.5rem]" /></button></a>
+                <a href="https://www.tiktok.com/@tukanginaja">
+                    <button class="btn btn-ghost hover:bg-transparent">
+                        <img src="../public/svg/footer/tiktok.svg" class="h-[2.5rem]" /></button></a>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- END FOOTER MOBILE -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../script/swiper.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../script/aos.js"></script>
+    <script src="../script/navbar.js"></script>
+</body>
+
+</html>

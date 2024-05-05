@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link href="src/output.css" rel="stylesheet" />
+  <link href="src/font.css" rel="stylesheet" />
+  <link href="src/animation.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>TukanginAja.id</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="bg-white border-gray-200 fixed w-screen z-[99]">
+    <div class="w-11/12 flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="public/svg/logo.svg" class="h-8" alt="TukanginAja Logo" />
+        <span class="self-center text-2xl whitespace-nowrap sans3 text-[#083D77] font-bold">Tukangin<span
+            class="text-[#14B6B8]">Aja</span></span>
+      </a>
+      <!-- button -->
+      <button class="lg:hidden"
+        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); toggleMobileMenu();"
+        aria-label="Main Menu">
+        <svg width="40" height="40" viewBox="0 0 100 100">
+          <path class="line line1"
+            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            stroke="#083D77" />
+          <path class="line line2" d="M 20,50 H 80" stroke="#083D77" />
+          <path class="line line3"
+            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            stroke="#083D77" />
+        </svg>
+      </button>
+      <div class="hidden w-full lg:block lg:w-auto md:pt-5 lg:pt-0" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col space-y-1 lg:space-y-0 p-4 lg:p-0 mt-4 border-2 border-[#083D77] rounded-lg bg-gray-100 lg:flex-row lg:border-0 lg:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-white items-center">
+          <li>
+            <a href="index.html" class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="layanan.html"
+              class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Layanan Kami</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Tentang
+              Kami</a>
+          </li>
+          <li>
+            <a href="blog.html"
+              class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Blog</a>
+          </li>
+          <li>
+            <a href="mitra.html"
+              class="block py-2 px-3 text-[#14B6B8] rounded md:bg-transparent md:p-0 font-semibold">Jadi Mitra</a>
+          </li>
+          <li>
+            <a href="#" class="btn bg-[#093D77] text-white border-0 hover:bg-[#1960AF]">Kontak Kami</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav -->
+
+  <main class="pt-20 md:pt-20">
+    <!-- hero PC ver-->
+    <div class="h-screen lg:flex flex-col items-center justify-between bg-cover bg-center hidden"
+      style="background-image: url('/public/img/mitratukang.png')">
+      <div class="text-center mt-[43vh] md:mt-16">
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">
+          Mari Bergabung <br />
+          Bersama Kami
+        </h1>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 w-full">
+        <div class="sm:hidden hidden md:flex items-center justify-end mt-36 w-full ml-60">
+          <img src="public/svg/mitra/mockup.svg" alt="Android Logo" class="lg:h-[45vh] xl:h-[60vh]" />
+        </div>
+        <div class="sm:hidden hidden md:flex flex-col w-1/2 ml-60 mt-40 justify-center">
+          <a class="mb-5 mt-5" href="https://play.google.com/store/apps/details?id=com.qqltech.tukang_segala_end_user"
+            target="_blank">
+            <img src="public/svg/playstore.svg" alt="" />
+          </a>
+          <a href="link_ke_app_store" target="_blank">
+            <img src="public/svg/appstore.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile ver -->
+
+    <section class="bg-cover lg:hidden" style="background-image: url('public/img/mitratukang.png')">
+      <div class="flex items-center h-[30rem] w-auto">
+        <div class="container mx-auto flex mt-16 items-center flex-col md:flex-row relative md:z-[99] z-99 p-5 md:p-0">
+          <!-- Bagian Teks di Sisi Kiri -->
+          <div class="w-full mb-4 md:mb-0 p-4 pt-10">
+            <h1 class="text-lg md:text-3xl font-semibold mb-4 text-white md:z-10 z-10 text-center sans3">
+              Mari Bergabung <br />
+              Bersama Kami
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end hero  -->
+  </main>
+
+  <!-- card -->
+  <div class="mx-auto max-w-6xl px-4 py-4 sm:px-6 md:px-24 md:py-16 lg:px-8 lg:py-20 sans3">
+    <div class="row-gap-8 grid grid-cols-1 md:grid-cols-3 bg-[#EDFCFF] p-2 rounded-2xl shadow-xl items-center">
+      <div class="mb-12 text-center md:mb-0 md:border-r-2 border-[#14B6B8]">
+        <div class="md:text-4xl !font-bold text-black !lg:text-5xl !xl:text-5xl">
+          2 Provinsi
+        </div>
+        <p class="text-sm !font-semibold fontlogo tracking-widest text-black lg:text-base">
+          Sebaran Mitra
+        </p>
+      </div>
+      <div class="mb-12 text-center md:mb-0 md:border-r-2 border-[#14B6B8]">
+        <div class="md:text-4xl !font-bold text-black !lg:text-5xl !xl:text-5xl">
+          16
+        </div>
+        <p class="text-sm !font-semibold fontlogo tracking-widest text-black lg:text-base">
+          Produk Layanan
+        </p>
+      </div>
+      <div class="mb-12 text-center md:mb-0">
+        <div class="md:text-4xl !font-bold text-black !lg:text-5xl !xl:text-5xl">
+          100+
+        </div>
+        <p class="text-sm !font-semibold fontlogo tracking-widest text-black lg:text-base">
+          Mitra Tukang
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- end card -->
+
+  <!-- Cara Jadi Tukang mitra -->
+  <div class="w-full xl:mx-10 ">
+    <div class="px-4 py-8">
+      <div class="lg:grid-cols-2 grid palce-items-center space-y-8 md:space-y-0 md:space-x-8">
+        <div class="md:w-full" data-aos="fade-up">
+          <h2 class="mb-4 sans3 text-3xl md:text-7xl font-semibold">
+            Cara Jadi Mitra Tukang
+          </h2>
+          <p class="sans3 text-lg md:text-3xl text-black font-normal text-start">
+            Tertarik untuk menjadi bagian kami? Ayo jadi tukang kami! Dengan
+            menjadi mitra tukang, kamu akan mendapatkan pekerjaan dengan lebih
+            mudah, cepat, dan aman.
+          </p>
+          <div class="my-5 mx-0 bg-[#093D77] rounded-xl">
+            <p class="sans3 text-2xl text-white px-10 py-4">
+              1. Daftarkan akun Anda melalui aplikasi Mitra Tukang
+            </p>
+          </div>
+          <div class="my-5 mx-0 bg-[#093D77] rounded-xl">
+            <p class="sans3 text-2xl text-white px-10 py-4">
+              2. Mengikuti Seminar K3 dan Sosialisasi yg diadakan
+              TukanginAja.id
+            </p>
+          </div>
+          <div class="my-5 mx-0 bg-[#093D77] rounded-xl">
+            <p class="sans3 text-2xl text-white px-10 py-4">
+              3. Apabila akun Anda sudah tervalidasi, Anda siap untuk menerima
+              orderan
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:w-auto flex justify-center" data-aos="fade-down">
+          <img src="public/svg/mitra/maintance.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cara Jadi Tukang mitra -->
+
+  <!-- MOCKUP -->
+  <div class="flex items-center justify-center md:flex-row bg-white md:h-screen h-fit w-full sans3">
+    <div class="container mx-auto flex items-center flex-col md:flex-row">
+      <!-- Gambar -->
+
+      <div data-aos="fade-right" class="md:w-1/2 w-full md:flex justify-end relative mb-8 md:mb-0 hidden">
+        <img src="public/svg/mitra/mockup2.svg" alt="" />
+      </div>
+
+      <div class="w-full mb-4 md:mb-0 p-4" data-aos="fade-up">
+        <h2 class="text-3xl font-semibold md:text-5xl lg:text-5xl mb-4 sans3 z-10 relative text-black sans3">
+          <span class="text-[#14B6B8]"># Jadi Mitra Tukang</span>
+        </h2>
+        <h1 class="sans3 text-2xl md:text-3xl xl:text-6xl font-semibold">
+          Mari Bergabung Dan Dapatkan Keuntungan Maksimal
+        </h1>
+
+        <div class="flex items-center mt-10">
+          <h1 class="fonthero text-black sans3">
+            Download Aplikasi Mitra Tukang Disini
+          </h1>
+        </div>
+        <div class="flex space-x-4 md:space-x-8 mt-5">
+          <a href="https://play.google.com/store/apps/details?id=com.qqltech.tukang_segala_end_user">
+            <img src="public/svg/playstore.svg" alt="Google Play" class="w-auto h-16 md:h-[5vh] lg:h-auto" />
+          </a>
+          <a href="">
+            <img src="public/svg/appstore.svg" alt="App Store" class="w-auto h-16 md:h-[5vh] lg:h-auto" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MOCKUP -->
+
+  <!-- STORY -->
+  <!-- testi  swipper-->
+
+  <section class="h-full bg-white pt-14 xl:pt-20 2xl:pt-10 sans3">
+    <h1 class="text-center text-3xl md:text-4xl lg:text-5xl text-black font-semibold" data-aos="fade-up">
+      Cerita Mereka <span class="text-[#14B6B8]">Setelah Bergabung</span>
+    </h1>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide p-14">
+          <div
+            class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col items-center justify-between h-auto py-10 w-auto">
+            <div>
+              <img src="public/svg/mitra/orang1.svg" alt="Gambar 1" class="p-5" />
+            </div>
+
+            <hr class="my-2 w-[280.007px] border-t-2 border-[#093D77]" />
+            <div class="p-4 w-full">
+              <h3 class="font-semibold mb-3 text-center sans3 text-3xl">
+                Rama Dwi
+              </h3>
+              <p class="text-gray-600 text-center sans3 text-xl">
+                Adanya tukangsegala sangat berpengaruh bagi saya dan keluarga
+                saya. Saya dengan cepat mendapatkan orderan. Senang bisa
+                menjadi bagian dari tukangsegala.
+              </p>
+              <h3 class="font-semibold mb-3 text-center sans3 text-3xl mt-7">
+                Tukang Listrik
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide p-14">
+          <div
+            class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col items-center justify-between h-auto py-10 w-auto">
+            <div>
+              <img src="public/svg/mitra/orang2.svg" alt="Gambar 1" class="p-5" />
+            </div>
+
+            <hr class="my-2 w-[280.007px] border-t-2 border-[#093D77]" />
+            <div class="p-4 w-full">
+              <h3 class="font-semibold mb-3 text-center sans3 text-3xl">
+                Ranu Trilaksono
+              </h3>
+              <p class="text-gray-600 text-center sans3 text-xl">
+                Pengalaman kerja saya bertambah dengan ikut serta di
+                TukanginAja.id. Terimakasih telah memberi wadah untuk kami.
+              </p>
+              <h3 class="font-semibold mb-3 text-center sans3 text-3xl mt-7">
+                Tukang Taman
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide p-14">
+          <div
+            class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col items-center justify-between h-auto py-10 w-auto">
+            <div>
+              <img src="public/svg/mitra/orang3.svg" alt="Gambar 1" class="p-5" />
+            </div>
+
+            <hr class="my-2 w-[280.007px] border-t-2 border-[#093D77]" />
+            <div class="p-4 w-full">
+              <h3 class="font-semibold mb-3 text-center sans3 text-3xl">
+                Udin Dwi
+              </h3>
+              <p class="text-gray-600 text-center sans3 text-xl">
+                Saya sangat amat terbantu dalam mencari pekerjaan sesuai
+                dengan bidang keahlian saya.
+              </p>
+              <h3 class="font-semibold mb-3 text-center sans3 text-3xl mt-7">
+                Tukang Bangunan
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end testi swipper -->
+  <!-- END STORY -->
+
+  <!--  FOOTER  DESKTOP -->
+  <footer class="footer py-[6rem] hidden lg:flex justify-around bg-[#093D77] sans3 text-white">
+    <aside class="flex space-x-3 lg:space-x-2">
+      <div class="items-start">
+        <img src="logo.svg" class="h-[50px]" />
+      </div>
+
+      <div class="h-full text-white space-y-5 flex flex-col text-start">
+        <h1 class="text-white text-3xl font-semibold text-center mt-2">
+          TukanginAja.id
+        </h1>
+        <div>
+          <p class="text-xl">Tentang Kami</p>
+          <p class="text-xl">Blog</p>
+        </div>
+      </div>
+    </aside>
+
+    <nav>
+      <h6 class="text-2xl font-semibold">Kategori</h6>
+      <a class="link link-hover">Tukang Ac</a>
+      <a class="link link-hover">Massege</a>
+      <a class="link link-hover">Tukang Listrik</a>
+      <a class="link link-hover">Lainya</a>
+    </nav>
+    <nav>
+      <h6 class="text-2xl font-semibold">Kategori</h6>
+      <a class="link link-hover">Tukang Ac</a>
+      <a class="link link-hover">Massege</a>
+      <a class="link link-hover">Tukang Listrik</a>
+      <a class="link link-hover">Lainya</a>
+    </nav>
+    <nav>
+      <h6 class="text-2xl font-semibold">Kategori</h6>
+      <a class="link link-hover">Tukang Ac</a>
+      <a class="link link-hover">Massege</a>
+      <a class="link link-hover">Tukang Listrik</a>
+      <a class="link link-hover">Lainya</a>
+    </nav>
+  </footer>
+  <div class="w-full bg-white justify-center hidden lg:flex">
+    <div class="container flex justify-between text-[#7C7C7C] h-full items-center">
+      <h1 class="font-semibold text-xl py-2 text-black lg:text-sm xl:text-lg">
+        Copyright © 2023 PT JOYO SEJAHTERA SENTOSA EKAPRIMA.
+        <span class="font-thin">All rights reserved.</span>
+      </h1>
+      <div class="h-full items-center flex p-3 space-x-5">
+        <a href="https://wa.me/+628113288966?text=Halo%20kak,%20saya%20ingin%20bertanya-tanya%20mengenai%20TukanginAja">
+          <button class="btn btn-ghost hover:bg-transparent">
+            <img src="public/svg/footer/wa.svg" class="lg:h-1/2 xl:h-full" />
+          </button>
+        </a>
+        <a href="https://www.instagram.com/tukanginajaid?igsh=d2o1OWZ6ZHIyMGIz">
+          <button class="btn btn-ghost hover:bg-transparent">
+            <img src="public/svg/footer/ig.svg" class="lg:h-1/2 xl:h-full" /></button></a>
+        <a href="https://www.facebook.com/profile.php?id=61553346410387">
+          <button class="btn btn-ghost hover:bg-transparent">
+            <img src="public/svg/footer/fb.svg" class="lg:h-1/2 xl:h-full" /></button></a>
+        <a href="https://www.tiktok.com/@tukanginaja">
+          <button class="btn btn-ghost hover:bg-transparent">
+            <img src="public/svg/footer/tiktok.svg" class="lg:h-1/2 xl:h-full" /></button></a>
+      </div>
+    </div>
+  </div>
+  <!--  END FOOTER DESKTOP -->
+
+  <!-- FOOTER MOBILE  -->
+  <footer class="bg-[#093D77] sans3 lg:hidden block">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+          <div class="flex items-center space-x-3">
+            <img src="logo.svg" class="h-[50px]" />
+            <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">TukanginAja</span>
+          </div>
+          <div class="h-full my-5">
+            <a href="#" class="hover:underline text-white">
+              <h1 class="text-2xl text-white font-semibold">Tentang Kami</h1>
+            </a>
+            <a href="#" class="hover:underline text-white">
+              <h1 class="text-2xl text-white font-semibold">Blog</h1>
+            </a>
+          </div>
+        </div>
+        <hr class="py-5" />
+        <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+            <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
+              Kategori
+            </h2>
+            <ul class="text-white font-normal space-y-2">
+              <li>
+                <a href="#" class="hover:underline">
+                  <p>Tukang Ac</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:underline">
+                  <p>Massege</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">
+                  <p>Lainya</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
+              Kategori
+            </h2>
+            <ul class="text-white font-normal space-y-2">
+              <li>
+                <a href="#" class="hover:underline">
+                  <p>Tukang Ac</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:underline">
+                  <p>Massege</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">
+                  <p>Lainya</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
+              Kategori
+            </h2>
+            <ul class="text-white font-normal space-y-2">
+              <li>
+                <a href="#" class="hover:underline">
+                  <p>Tukang Ac</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:underline">
+                  <p>Massege</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">
+                  <p>Lainya</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sm:flex sm:items-center sm:justify-between bg-white p-4 md:flex-col">
+      <span class="flex justify-center text-[11px] md:text-xl text-black font-semibold">Copyright © 2023 PT JOYO
+        SEJAHTERA SENTOSA EKAPRIMA.
+        <span class="font-thin">All rights reserved.</span>
+      </span>
+      <div class="flex mt-4 justify-center">
+        <a href="https://wa.me/+628113288966?text=Halo%20kak,%20saya%20ingin%20bertanya-tanya%20mengenai%20TukanginAja">
+          <button class="btn btn-ghost hover:bg-transparent">
+            <img src="public/svg/footer/wa.svg" class="h-[2.5rem]" />
+          </button>
+        </a>
+        <a href="https://www.instagram.com/tukanginajaid?igsh=d2o1OWZ6ZHIyMGIz">
+          <button class="btn btn-ghost hover:bg-transparent">
+            <img src="public/svg/footer/ig.svg" class="h-[2.5rem]" /></button></a>
+        <a href="https://www.facebook.com/profile.php?id=61553346410387">
+          <button class="btn btn-ghost hover:bg-transparent">
+            <img src="public/svg/footer/fb.svg" class="h-[2.5rem]" /></button></a>
+        <a href="https://www.tiktok.com/@tukanginaja">
+          <button class="btn btn-ghost hover:bg-transparent">
+            <img src="public/svg/footer/tiktok.svg" class="h-[2.5rem]" /></button></a>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- END FOOTER MOBILE -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script/swiper.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script/aos.js"></script>
+  <script src="script/navbar.js"></script>
+</body>
+
+</html>

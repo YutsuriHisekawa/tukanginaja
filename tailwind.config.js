@@ -3,7 +3,7 @@ module.exports = {
   daisyui: {
     themes: ["light", "dark", "cupcake"],
   },
-  content: ["./src/**/*.{html,js}","./*.{html,js}"],
+  content: ["./src/**/*.{html,js}","./*.{html,js}","layanan/*{html,js}"],
   theme: {
     extend: {
       fontFamily: {

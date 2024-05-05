@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="public/img/logogram.png">
+    <link href="src/output.css" rel="stylesheet" />
+    <link href="src/custom.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>TukanginAja.id</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="fixed w-screen bg-white border-gray-200 box-shadow">
+      <div class="w-11/12 flex flex-wrap items-center justify-between mx-auto p-4 px-0">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="public/svg/mainlogo.svg" class="h-8" alt="TukanginAja Logo" />
+        </a>
+        <!-- button -->
+        <button class="lg:hidden" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); toggleMobileMenu();" aria-label="Main Menu">
+          <svg width="40" height="40" viewBox="0 0 100 100">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" stroke="#083D77" />
+            <path class="line line2" d="M 20,50 H 80" stroke="#083D77" />
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" stroke="#083D77" />
+          </svg>
+        </button>
+        <div class="hidden w-full lg:block lg:w-auto md:pt-5 lg:pt-0" id="navbar-default">
+          <ul class="flex flex-col space-y-1 lg:space-y-0 p-4 lg:p-0 mt-4 border-2 border-[#083D77] rounded-lg bg-gray-100 lg:flex-row lg:border-0 lg:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-white items-center">
+            <li>
+                <a href="index.html" class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Beranda</a>
+              </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Layanan Kami</a>
+            </li>
+            <li>
+              <a href="tentang_kami.html" class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="blog.html" class="block py-2 px-3 text-[#14B6B8] font-semibold rounded md:bg-transparent md:p-0" aria-current="page">Blog</a>
+            </li>
+            <li>
+              <a href="kontak_kami.html" class="btn bg-[#093D77] font-semibold text-white border-0 hover:bg-[#1960AF]">Kontak Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="w-11/12 mx-auto flex items-center sm:h-screen">
+        <div class="flex-1 justify-center pr-0">
+            <div class="flex flex-col">
+                <h4 class="text-[36px] font-bold">Ingin Tahu Lebih Banyak Tentang  <span class="color-child">TukanginAja.id</span>?</h4>
+                <p class="text-[22px] my-5">Berita seru, tips menarik, dan promo terbaru. Baca semua artikel soal <span class="color-child">TukanginAja.id</span> di sini.</p>
+                <div class="flex">
+                    <img src="public/img/flying-button/google-play.png" class="mr-3 h-[60px]">
+                    <img src="public/img/flying-button/app-store.png" class="h-[60px]"/>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 bg-flying-button bg-no-repeat bg-cover bg-center">
+        </div>
+    </section>
+        
+    
+    <!---FOOTER-->
+    <footer class="footer py-[6rem] bg-[#093D77] sans3 text-white">
+      <div class="w-11/12 mx-auto flex flex-col lg:flex-row justify-between">
+    <aside class="flex flex-col lg:flex-row lg:space-x-2">
+      <div class="items-start mt-[-10px]">
+        <img src="public/svg/logo-footer.svg" class="h-[50px]" />
+      </div>
+
+      <div class="h-full text-white flex flex-col text-start">
+        <h6 class="text-white text-2xl font-semibold text-center">
+          TukanginAja.id
+        </h6>
+        <div>
+          <ul class="list-none">
+              <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tentang Kami</a></li>
+              <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <div>
+      <h6 class="text-2xl font-semibold">Kategori</h6>
+      <ul class="list-none">
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tukang Ac</a></li>
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Massege</a></li>
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tukang Listrik</a></li>
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Lainnya</a></li>
+      </ul>
+  </div>
+    <div>
+      <h6 class="text-2xl font-semibold">Menjadi Mitra</h6>
+      <ul class="list-none">
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Cara Menjadi Mitra</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="text-2xl font-semibold">Hubungi Kami</h6>
+      <ul class="list-none">
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Kontak Kami</a></li>
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Kebijakan Privasi</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="w-full py-2">
+      <div class="w-11/12 mx-auto flex flex-col lg:flex-row flex-row-reverse flex-col-reverse justify-between text-[#7C7C7C] items-start lg:items-center">
+          <h1 class="font-semibold py-1 text-black text-[12px]">
+              Copyright © 2024 PT Joyo Sejahtera Sentosa Ekaprima.
+              <span class="font-normal">All rights reserved.</span>
+          </h1>
+          <div class="flex justify-start lg:justify-end items-center mb-3 lg:mb-0">
+              <a class="btn-social-media hover:bg-transparent pl-0" >
+                  <img src="public/svg/social-media/social-media-wa.svg" />
+              </a>
+              <a class="btn-social-media hover:bg-transparent pl-2">
+                  <img src="public/svg/social-media/social-media-ig.svg" />
+              </a>
+              <a class="btn-social-media hover:bg-transparent pl-2">
+                  <img src="public/svg/social-media/social-media-fb.svg" />
+              </a>
+              <a class="btn-social-media hover:bg-transparent pl-2">
+                  <img src="public/svg/social-media/social-media-tt.svg"/>
+              </a>
+          </div>
+      </div>
+  </div>
+  
+  <div class="flex flex-row flying items-center hover:opacity-100 opacity-95 cursor-pointer">
+      <div class="hidden mr-[-20px] rounded-full bg-white p-4 h-max box-shadow z-10 md:flex">
+          <img src="public/img/message-typing.png" width="30px" height="30px" alt="Message Typing Icon"/>
+          <span class="ml-3 self-center text-[16px]">Butuh Bantuan</span>
+      </div>
+      <div class="hidden mr-5 w-[25px] h-[25px] rounded bg-white rotate-45 md:flex"></div>
+      <div class="rounded-full bg-white p-4 box-shadow">
+          <img src="public/img/cs.png" width="50px" alt="Customer Service Icon"/>
+      </div>
+  </div>
+  <!---END FOOTER-->
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script/home.js"></script>
+  <script src="script/navbar.js"></script>
+</html>
