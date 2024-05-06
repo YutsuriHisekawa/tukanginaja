@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="logo.svg" type="image/svg+xml" />
   <link href="src/output.css" rel="stylesheet" />
+  <link href="src/custom.css" rel="stylesheet" />
   <link href="src/font.css" rel="stylesheet" />
   <link href="src/animation.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -48,7 +49,8 @@
               class="block py-2 px-3 text-[#14B6B8] rounded md:bg-transparent md:p-0 font-semibold">Layanan Kami</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Tentang
+            <a href="tentang_kami.html"
+              class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Tentang
               Kami</a>
           </li>
           <li>
@@ -60,7 +62,7 @@
               Mitra</a>
           </li>
           <li>
-            <a href="#" class="btn bg-[#093D77] text-white border-0 hover:bg-[#1960AF]">Kontak Kami</a>
+            <a href="kontak_kami.html" class="btn bg-[#093D77] text-white border-0 hover:bg-[#1960AF]">Kontak Kami</a>
           </li>
         </ul>
       </div>
@@ -789,24 +791,21 @@
 
     <nav>
       <h6 class="text-2xl font-semibold">Kategori</h6>
-      <a class="link link-hover">Tukang Ac</a>
-      <a class="link link-hover">Massege</a>
-      <a class="link link-hover">Tukang Listrik</a>
-      <a class="link link-hover">Lainya</a>
+      <a href="layanan/ac.html" class="link link-hover">Tukang Ac</a>
+      <a href="layanan/cctv.html" class="link link-hover">CCTV</a>
+      <a href="layanan/listrik.html" class="link link-hover">Tukang Listrik</a>
+      <a href="layanan.html" class="link link-hover">Lainya</a>
     </nav>
     <nav>
-      <h6 class="text-2xl font-semibold">Kategori</h6>
-      <a class="link link-hover">Tukang Ac</a>
-      <a class="link link-hover">Massege</a>
-      <a class="link link-hover">Tukang Listrik</a>
-      <a class="link link-hover">Lainya</a>
+      <h6 class="text-2xl font-semibold">Menjadi Mitra</h6>
+      <a href="kontak_kami.html" class="link link-hover">Cara Menjadi Mitra</a>
+
     </nav>
     <nav>
-      <h6 class="text-2xl font-semibold">Kategori</h6>
-      <a class="link link-hover">Tukang Ac</a>
-      <a class="link link-hover">Massege</a>
-      <a class="link link-hover">Tukang Listrik</a>
-      <a class="link link-hover">Lainya</a>
+      <h6 class="text-2xl font-semibold">Hubungi Kami</h6>
+      <a href="kontak_kami.html" class="link link-hover">Kontak Kami</a>
+      <a href="kebijakan.html" class="link link-hover">Kebijakan</a>
+
     </nav>
   </footer>
   <div class="w-full bg-white justify-center hidden lg:flex">
@@ -880,41 +879,30 @@
           </div>
           <div>
             <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
-              Kategori
+              Menjadi Mitra
             </h2>
             <ul class="text-white font-normal space-y-2">
               <li>
-                <a href="#" class="hover:underline">
-                  <p>Tukang Ac</p>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="hover:underline">
-                  <p>Massege</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">
-                  <p>Lainya</p>
+                <a href="kontak_kami.html" class="hover:underline">
+                  <p>Cara Menjadi Mitra</p>
                 </a>
               </li>
             </ul>
           </div>
           <div>
             <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
-              Kategori
+              Hubungi Kami
             </h2>
             <ul class="text-white font-normal space-y-2">
               <li>
-                <a href="#" class="hover:underline">
-                  <p>Tukang Ac</p>
+                <a href="kontak_kami.html" class="hover:underline">
+                  <p>Kontak Kami</p>
                 </a>
               </li>
 
               <li>
-                <a href="#" class="hover:underline">
-                  <p>Massege</p>
+                <a href="kebijakan.html" class="hover:underline">
+                  <p>Kebijakan Privasi</p>
                 </a>
               </li>
               <li>
@@ -951,6 +939,29 @@
     </div>
     </div>
   </footer>
+
+  <div class="flex flex-row flying items-center hover:opacity-100 opacity-95 cursor-pointer">
+    <div class="hidden mr-[-20px] rounded-full bg-white p-4 h-max box-shadow z-[99] md:flex">
+      <img src="public/img/message-typing.png" width="30px" height="30px" alt="Message Typing Icon" />
+      <span class="ml-3 self-center text-[16px]">Butuh Bantuan</span>
+    </div>
+    <div class="hidden mr-5 w-[25px] h-[25px] rounded bg-white rotate-45 md:flex"></div>
+    <div class="rounded-full bg-white p-4 box-shadow">
+      <img src="public/img/cs.png" width="50px" alt="Customer Service Icon" />
+    </div>
+  </div>
+  <!-- END FOOTER MOBILE -->
+
+  <div class="flex flex-row flying items-center hover:opacity-100 opacity-95 cursor-pointer">
+    <div class="hidden mr-[-20px] rounded-full bg-white p-4 h-max box-shadow z-[99] md:flex">
+      <img src="public/img/message-typing.png" width="30px" height="30px" alt="Message Typing Icon" />
+      <span class="ml-3 self-center text-[16px]">Butuh Bantuan</span>
+    </div>
+    <div class="hidden mr-5 w-[25px] h-[25px] rounded bg-white rotate-45 md:flex"></div>
+    <div class="rounded-full bg-white p-4 box-shadow">
+      <img src="public/img/cs.png" width="50px" alt="Customer Service Icon" />
+    </div>
+  </div>
   <!-- END FOOTER MOBILE -->
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html data-theme="light">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="public/img/logogram.png">
+    <link rel="icon" type="image/x-icon" href="logo.svg">
     <link href="src/output.css" rel="stylesheet" />
     <link href="src/custom.css" rel="stylesheet" />
+    <link href="src/animation.css" rel="stylesheet" />
+    <link href="src/font.css" rel="stylesheet" />
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <title>TukanginAja.id</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- NAVBAR -->
     <nav class="fixed w-screen bg-white border-gray-200 box-shadow z-50">
-      <div class="w-11/12 flex flex-wrap items-center justify-between mx-auto p-4 px-0">
-        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="public/svg/mainlogo.svg" class="h-8" alt="TukanginAja Logo" />
-        </a>
-        <!-- button -->
-        <button class="lg:hidden" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); toggleMobileMenu();" aria-label="Main Menu">
-          <svg width="40" height="40" viewBox="0 0 100 100">
-            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" stroke="#083D77" />
-            <path class="line line2" d="M 20,50 H 80" stroke="#083D77" />
-            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" stroke="#083D77" />
-          </svg>
-        </button>
-        <div class="hidden w-full lg:block lg:w-auto md:pt-5 lg:pt-0" id="navbar-default">
-          <ul class="flex flex-col space-y-1 lg:space-y-0 p-4 lg:p-0 mt-4 border-2 border-[#083D77] rounded-lg bg-gray-100 lg:flex-row lg:border-0 lg:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-white items-center">
-            <li>
-                <a href="index.html" class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Beranda</a>
-              </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Layanan Kami</a>
-            </li>
-            <li>
-              <a href="tentang_kami.html" class="block py-2 px-3 text-[#14B6B8] font-semibold rounded md:bg-transparent md:p-0" aria-current="page">Tentang Kami</a>
-            </li>
-            <li>
-              <a href="blog.html" class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Blog</a>
-            </li>
-            <li>
-              <a href="kontak_kami.html" class="btn bg-[#093D77] font-semibold text-white border-0 hover:bg-[#1960AF]">Kontak Kami</a>
-            </li>
-          </ul>
+        <div class="w-11/12 flex flex-wrap items-center justify-between mx-auto p-4 px-0">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="public/svg/mainlogo.svg" class="h-8" alt="TukanginAja Logo" />
+            </a>
+            <!-- button -->
+            <button class="lg:hidden"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); toggleMobileMenu();"
+                aria-label="Main Menu">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                        stroke="#083D77" />
+                    <path class="line line2" d="M 20,50 H 80" stroke="#083D77" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                        stroke="#083D77" />
+                </svg>
+            </button>
+            <div class="hidden w-full lg:block lg:w-auto md:pt-5 lg:pt-0" id="navbar-default">
+                <ul
+                    class="flex flex-col space-y-1 lg:space-y-0 p-4 lg:p-0 mt-4 border-2 border-[#083D77] rounded-lg bg-gray-100 lg:flex-row lg:border-0 lg:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-white items-center">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="layanan.html"
+                            class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Layanan
+                            Kami</a>
+                    </li>
+                    <li>
+                        <a href="tentang_kami.html"
+                            class="block py-2 px-3 text-[#14B6B8] font-semibold rounded md:bg-transparent md:p-0"
+                            aria-current="page">Tentang Kami</a>
+                    </li>
+                    <li>
+                        <a href="blog.html"
+                            class="block py-2 px-3 text-black font-semibold rounded md:bg-transparent md:p-0">Blog</a>
+                    </li>
+                    <li>
+                        <a href="mitra.html"
+                            class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Jadi
+                            Mitra</a>
+                    </li>
+                    <li>
+                        <a href="kontak_kami.html"
+                            class="btn bg-[#093D77] font-semibold text-white border-0 hover:bg-[#1960AF]">Kontak
+                            Kami</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
     <section class="wrap-tentang-kami">
         <div class="w-full h-full hero-tentang-kami">
@@ -52,23 +77,24 @@
     </section>
     <section class="py-8">
         <div class="container mx-auto px-4">
-            <div class="w-full md:w-11/12 lg:w-3/5 mx-auto flex flex-col md:flex-row justify-between border border-[#093D77] rounded-[25px] p-7">
+            <div
+                class="w-full md:w-11/12 lg:w-3/5 mx-auto flex flex-col md:flex-row justify-between border border-[#093D77] rounded-[25px] p-7">
                 <div class="w-full md:w-4/5 pr-0 md:pr-3 mb-4 md:mb-0">
-                    <span class="text-[#093D77] font-semibold">TukanginAja.id</span> merupakan 
+                    <span class="text-[#093D77] font-semibold">TukanginAja.id</span> merupakan
                     <span class="italic">one stop apps</span> untuk kebutuhan segala jenis pertukangan.
                     Kami memfasilitasi interaksi tukang dengan konsumen yang membutuhkan layanan jasa
                     seperti Tukang AC, Tukang Listrik, Tukang Pipa, dan jenis tukang lainnya. Dapatkan
-                    kemudahan dalam mencari segala jenis tukang dalam satu platform, hanya di 
+                    kemudahan dalam mencari segala jenis tukang dalam satu platform, hanya di
                     <span class="text-[#093D77] font-semibold">TukanginAja.id</span>.
                     Karena semua masalah, pasti ada tukangnya.
                 </div>
                 <div class="w-full md:w-1/5 p-0 md:p-3">
-                    <img src="public/img/logogram.png" class="w-full h-auto object-contain"/>
+                    <img src="public/img/logogram.png" class="w-full h-auto object-contain" />
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section>
         <div class="w-11/12 mx-auto text-center">
             <h1 class="text-[32px] color-child font-bold">VISI KAMI</h1>
@@ -77,46 +103,51 @@
             <p class="text-[18px] mb-4">Memberikan layanan pertukangan yang ekonomis, berkualitas dan bergaransi</p>
         </div>
     </section>
-    <section>
+    <!-- <section>
         <div class="w-11/12 mx-auto px-4">
-            <h1 class="text-3xl lg:text-4xl font-semibold text-center mb-7">Temui Founder <span class="text-[#093D77]">TukanginAja.id</span></h1>
+            <h1 class="text-3xl lg:text-4xl font-semibold text-center mb-7">Temui Founder <span
+                    class="text-[#093D77]">TukanginAja.id</span></h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="text-center">
-                    <img src="public/img/tentang_kami/user001.jpg" class="w-48 h-48 sm:w-[150px] sm:h-[150px] border-4 border-[#093D77] rounded-full overflow-hidden mx-auto"/>
+                    <img src="public/img/tentang_kami/user001.jpg"
+                        class="w-48 h-48 sm:w-[150px] sm:h-[150px] border-4 border-[#093D77] rounded-full overflow-hidden mx-auto" />
                     <h5 class="font-bold text-xl mt-4">Nama Lengkap</h5>
                     <p class="text-lg">Jabatan</p>
                 </div>
                 <div class="text-center">
-                    <img src="public/img/tentang_kami/user002.jpg" class="w-48 h-48 sm:w-[150px] sm:h-[150px] border-4 border-[#093D77] rounded-full overflow-hidden mx-auto"/>
+                    <img src="public/img/tentang_kami/user002.jpg"
+                        class="w-48 h-48 sm:w-[150px] sm:h-[150px] border-4 border-[#093D77] rounded-full overflow-hidden mx-auto" />
                     <h5 class="font-bold text-xl mt-4">Nama Lengkap</h5>
                     <p class="text-lg">Jabatan</p>
                 </div>
                 <div class="text-center">
-                    <img src="public/img/tentang_kami/user003.jpg" class="w-48 h-48 sm:w-[150px] sm:h-[150px] border-4 border-[#093D77] rounded-full overflow-hidden mx-auto"/>
+                    <img src="public/img/tentang_kami/user003.jpg"
+                        class="w-48 h-48 sm:w-[150px] sm:h-[150px] border-4 border-[#093D77] rounded-full overflow-hidden mx-auto" />
                     <h5 class="font-bold text-xl mt-4">Nama Lengkap</h5>
                     <p class="text-lg">Jabatan</p>
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section> -->
+
     <section>
         <div class="w-3/5 mx-auto">
-            <h1 class="text-[36px] font-semibold text-center mb-7">Keunggulan Kompetitif <span class="color-child">Kami</span></h1>
+            <h1 class="text-[36px] font-semibold text-center mb-7">Keunggulan Kompetitif <span
+                    class="color-child">Kami</span></h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-between">
                 <div class="col-span-1 text-center box-shadow rounded-[30px] p-4">
-                    <img src="public/img/tentang_kami/keunggulan-01.png" class="w-[100px] h-[100px] mx-auto my-3"/>
-                    <hr class="border border-gray-300 my-5 px-5"/>
+                    <img src="public/img/tentang_kami/keunggulan-01.png" class="w-[100px] h-[100px] mx-auto my-3" />
+                    <hr class="border border-gray-300 my-5 px-5" />
                     <p class="text-[16px] mb-3">Tukang Bersertifikasi dan berpengalaman</p>
                 </div>
                 <div class="col-span-1 text-center box-shadow rounded-[30px] p-4">
-                    <img src="public/img/tentang_kami/keunggulan-02.png" class="w-[100px] h-[100px] mx-auto my-3"/>
-                    <hr class="border border-gray-300 my-5 px-5"/>
+                    <img src="public/img/tentang_kami/keunggulan-02.png" class="w-[100px] h-[100px] mx-auto my-3" />
+                    <hr class="border border-gray-300 my-5 px-5" />
                     <p class="text-[16px] mb-3">Pembayaran Sekali Bayar untuk Semua Pekerjaan</p>
                 </div>
                 <div class="col-span-1 text-center box-shadow rounded-[30px] p-4">
-                    <img src="public/img/tentang_kami/keunggulan-03.png" class="w-[100px] h-[100px] mx-auto my-3"/>
-                    <hr class="border border-gray-300 my-5 px-5"/>
+                    <img src="public/img/tentang_kami/keunggulan-03.png" class="w-[100px] h-[100px] mx-auto my-3" />
+                    <hr class="border border-gray-300 my-5 px-5" />
                     <p class="text-[16px] mb-3"><i>Same-day Service</i> (Pesan hari ini, datang hari ini juga)</p>
                 </div>
             </div>
@@ -125,67 +156,83 @@
     <section class="text-center">
         <div class="w-11/12 mx-auto">
             <div class="inline mx-auto">
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang AC</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Listrik</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Pipa</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Massage</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Atap</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Cat</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Bangunan</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Besi</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Gorden</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Nail Art</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Kunci</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Service Gadget</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Home Cleaning</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Cuci Mobil</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang Design Interior</span>
                 </div>
-                <div class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
+                <div
+                    class="inline-block relative w-fit rounded-full box-shadow border border-white hover:border-[#093D77] cursor-pointer px-4 py-3 mr-4 mb-4">
                     <span class="absolute top-1/2 transform -translate-y-1/2 h-3 w-3 bg-[#093D77] rounded-full"></span>
                     <span class="text-[16px] pl-6">Tukang MakeUp</span>
                 </div>
@@ -195,25 +242,28 @@
     <section>
         <div class="w-11/12 flex flex-col md:flex-row mx-auto">
             <div class="md:w-3/5 mb-4 md:mb-0">
-                <iframe class="w-full h-[300px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526.3914992309839!2d112.77981442955594!3d-7.331072840397331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fac47d36ef79%3A0xba9610ad1020a132!2sQuantum%20Leap!5e0!3m2!1sen!2sid!4v1714879948308!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="w-full h-[300px]"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526.3914992309839!2d112.77981442955594!3d-7.331072840397331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fac47d36ef79%3A0xba9610ad1020a132!2sQuantum%20Leap!5e0!3m2!1sen!2sid!4v1714879948308!5m2!1sen!2sid"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="md:w-2/5 flex flex-col align-start pl-5 sm:pl-0">
                 <div class="flex flex-row align-start mb-4">
-                    <img src="public/img/tentang_kami/cs-01.png" class="w-[44px] h-[44px] text-center"/>
+                    <img src="public/img/tentang_kami/cs-01.png" class="w-[44px] h-[44px] text-center" />
                     <div class="self-center ml-4">
                         <h4 class="font-bold color-base">Customer Service</h4>
                         <p>+62 811 328 8966</p>
                     </div>
                 </div>
                 <div class="flex flex-row align-start mb-4">
-                    <img src="public/img/tentang_kami/cs-02.png" class="w-[44px] h-[44px] text-center"/>
+                    <img src="public/img/tentang_kami/cs-02.png" class="w-[44px] h-[44px] text-center" />
                     <div class="self-center ml-4">
                         <h4 class="font-bold color-base">Email</h4>
                         <p>tukanginaja.id@gmail.com</p>
                     </div>
                 </div>
                 <div class="flex flex-row align-start mb-4">
-                    <img src="public/img/tentang_kami/cs-03.png" class="w-[44px] h-[44px] text-center"/>
+                    <img src="public/img/tentang_kami/cs-03.png" class="w-[44px] h-[44px] text-center" />
                     <div class="self-center ml-4">
                         <h4 class="font-bold color-base">Alamat</h4>
                         <p>Jl. Rungkut Asri Timur 11, Rungkut Kidul, Rungkut, Surabaya 60293</p>
@@ -225,71 +275,78 @@
     <section class="pb-[5rem]">
         <div class="w-11/12 flex flex-col lg:flex-row mx-auto">
             <div class="flex flex-col flex-1 justify-center">
-                <h1 class="text-[36px] font-semibold">Yuk Download Aplikasi <span class="color-child">TukanginAja.id</span></h1>
-                <p class="text-[1.3rem]">Kamu butuh tukang? cari di <span class="color-child">TukanginAja.id aja</span>. Tukang disini bersertifikasi semua loh dan pastinya aman terpercaya!</p>
-                <p class="text-[1.3rem] mt-[5rem]">Download aplikasi <span class="color-child">TukanginAja.id</span> sekarang</p>
+                <h1 class="text-[36px] font-semibold">Yuk Download Aplikasi <span
+                        class="color-child">TukanginAja.id</span></h1>
+                <p class="text-[1.3rem]">Kamu butuh tukang? cari di <span class="color-child">TukanginAja.id aja</span>.
+                    Tukang disini bersertifikasi semua loh dan pastinya aman terpercaya!</p>
+                <p class="text-[1.3rem] mt-[5rem]">Download aplikasi <span class="color-child">TukanginAja.id</span>
+                    sekarang</p>
                 <div class="flex pt-2">
-                    <img src="public/img/flying-button/google-play.png" class="h-[50px]"/>
-                    <img src="public/img/flying-button/app-store.png" class="h-[50px] ml-3"/>
+                    <img src="public/img/flying-button/google-play.png" class="h-[50px]" />
+                    <img src="public/img/flying-button/app-store.png" class="h-[50px] ml-3" />
                 </div>
             </div>
             <div class="flex flex-1 justify-center">
-                <img src="public/img/tentang_kami/phone.png"/>
+                <img src="public/img/tentang_kami/phone.png" />
             </div>
         </div>
     </section>
     <!---FOOTER-->
     <footer class="footer py-[6rem] bg-[#093D77] sans3 text-white">
         <div class="w-11/12 mx-auto flex flex-col lg:flex-row justify-between">
-      <aside class="flex flex-col lg:flex-row lg:space-x-2">
-        <div class="items-start mt-[-10px]">
-          <img src="public/svg/logo-footer.svg" class="h-[50px]" />
-        </div>
+            <aside class="flex flex-col lg:flex-row lg:space-x-2">
+                <div class="items-start mt-[-10px]">
+                    <img src="public/svg/logo-footer.svg" class="h-[50px]" />
+                </div>
 
-        <div class="h-full text-white flex flex-col text-start">
-          <h6 class="text-white text-2xl font-semibold text-center">
-            TukanginAja.id
-          </h6>
-          <div>
-            <ul class="list-none">
-                <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tentang Kami</a></li>
-                <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Blog</a></li>
-            </ul>
-          </div>
-        </div>
-      </aside>
+                <div class="h-full text-white flex flex-col text-start">
+                    <h6 class="text-white text-2xl font-semibold text-center">
+                        TukanginAja.id
+                    </h6>
+                    <div>
+                        <ul class="list-none">
+                            <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tentang
+                                    Kami</a></li>
+                            <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
 
-      <div>
-        <h6 class="text-2xl font-semibold">Kategori</h6>
-        <ul class="list-none">
-            <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tukang Ac</a></li>
-            <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Massege</a></li>
-            <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tukang Listrik</a></li>
-            <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Lainnya</a></li>
-        </ul>
-    </div>
-      <div>
-        <h6 class="text-2xl font-semibold">Menjadi Mitra</h6>
-        <ul class="list-none">
-            <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Cara Menjadi Mitra</a></li>
-        </ul>
-      </div>
-      <div>
-        <h6 class="text-2xl font-semibold">Hubungi Kami</h6>
-        <ul class="list-none">
-            <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Kontak Kami</a></li>
-            <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Kebijakan Privasi</a></li>
-        </ul>
-      </div>
+            <div>
+                <h6 class="text-2xl font-semibold">Kategori</h6>
+                <ul class="list-none">
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tukang Ac</a></li>
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Massege</a></li>
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Tukang Listrik</a></li>
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Lainnya</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="text-2xl font-semibold">Menjadi Mitra</h6>
+                <ul class="list-none">
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Cara Menjadi Mitra</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="text-2xl font-semibold">Hubungi Kami</h6>
+                <ul class="list-none">
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Kontak Kami</a></li>
+                    <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="#">Kebijakan Privasi</a>
+                    </li>
+                </ul>
+            </div>
     </footer>
     <div class="w-full py-2">
-        <div class="w-11/12 mx-auto flex flex-col lg:flex-row flex-row-reverse flex-col-reverse justify-between text-[#7C7C7C] items-start lg:items-center">
+        <div
+            class="w-11/12 mx-auto flex flex-col lg:flex-row flex-row-reverse flex-col-reverse justify-between text-[#7C7C7C] items-start lg:items-center">
             <h1 class="font-semibold py-1 text-black text-[12px]">
                 Copyright © 2024 PT Joyo Sejahtera Sentosa Ekaprima.
                 <span class="font-normal">All rights reserved.</span>
             </h1>
             <div class="flex justify-start lg:justify-end items-center mb-3 lg:mb-0">
-                <a class="btn-social-media hover:bg-transparent pl-0" >
+                <a class="btn-social-media hover:bg-transparent pl-0">
                     <img src="public/svg/social-media/social-media-wa.svg" />
                 </a>
                 <a class="btn-social-media hover:bg-transparent pl-2">
@@ -299,25 +356,26 @@
                     <img src="public/svg/social-media/social-media-fb.svg" />
                 </a>
                 <a class="btn-social-media hover:bg-transparent pl-2">
-                    <img src="public/svg/social-media/social-media-tt.svg"/>
+                    <img src="public/svg/social-media/social-media-tt.svg" />
                 </a>
             </div>
         </div>
     </div>
-    
+
     <div class="flex flex-row flying items-center hover:opacity-100 opacity-95 cursor-pointer">
         <div class="hidden mr-[-20px] rounded-full bg-white p-4 h-max box-shadow z-10 md:flex">
-            <img src="public/img/message-typing.png" width="30px" height="30px" alt="Message Typing Icon"/>
+            <img src="public/img/message-typing.png" width="30px" height="30px" alt="Message Typing Icon" />
             <span class="ml-3 self-center text-[16px]">Butuh Bantuan</span>
         </div>
         <div class="hidden mr-5 w-[25px] h-[25px] rounded bg-white rotate-45 md:flex"></div>
         <div class="rounded-full bg-white p-4 box-shadow">
-            <img src="public/img/cs.png" width="50px" alt="Customer Service Icon"/>
+            <img src="public/img/cs.png" width="50px" alt="Customer Service Icon" />
         </div>
     </div>
     <!---END FOOTER-->
-  </body>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="script/home.js"></script>
-  <script src="script/navbar.js"></script>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="script/home.js"></script>
+<script src="script/navbar.js"></script>
+
 </html>
