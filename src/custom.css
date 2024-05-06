@@ -13,6 +13,10 @@ body{
 section{
     padding-top:5rem;
 }
+.tab-blog-container {
+    width: 100%;
+    margin-right: 3rem;
+}
 .tab-blog{
     font-size: 16px;
     width: 100%;
@@ -21,15 +25,26 @@ section{
     overflow: hidden;
     margin-right: 3rem;
 }
-.tab-blog li{
+.tab-blog li {
     text-align: center;
     padding: 0.8rem;
     width: 150px;
 }
-.tab-blog li:hover{
+
+.tab-blog li:hover {
     cursor: pointer;
     background-color: #093D77;
     color: #ffffff;
+}
+
+.tab-blog-select {
+    display: none;
+    font-size: 16px;
+    padding: 0.5rem;
+    border: 1px solid #093D77;
+    border-radius: 50px;
+    background-color: #ffffff;
+    margin-top: 1rem;
 }
 .input-group-blog{
     border: 1px solid #093D77;
@@ -50,6 +65,13 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 40%;
+}
+.wrap-blog-left{
+    width: 60%;
+}
+.search-blog{
+    margin-top: 0;
 }
 .wrap-tab{
     margin: 2rem 0;
@@ -98,6 +120,7 @@ section{
     right: 3rem;
     bottom: 3rem;
     position: fixed;
+    z-index: 999;
 }
 .bg-flying-button {
     background-image: url("../public/img/flying-button/bg-flying-button.png");
@@ -146,4 +169,54 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  .float-animation {
+    animation: floatAnimation 2s infinite alternate ease-in-out;
+  }
+  @media screen {
+    
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .wrap-blog-right {
+        width: 100%;
+    }
+    .wrap-blog-left {
+        width: 100%;
+    }
+    .wrap-blog{
+        height: auto;
+    }
+    .search-blog{
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 768px){
+    .wrap-blog-right {
+        width: 100%;
+    }
+    .wrap-blog-left {
+        width: 100%;
+    }
+    .wrap-blog{
+        height: auto;
+    }
+    .search-blog{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .tab-blog {
+        display: none;
+    }
+    .tab-blog-select {
+        display: block;
+    }
 }

@@ -172,18 +172,6 @@
       outline: 0;
     }
   }
-  .flying{
-    right: 3rem;
-    bottom: 3rem;
-    position: fixed;
-}
-.bg-flying-button {
-    background-image: url("../public/img/flying-button/bg-flying-button.png");
-    background-size: cover;
-    height: 100%;
-    margin-right: 0;
-    padding-right: 0;
-}
   
 
   .swiper {
@@ -195,11 +183,13 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .swiper-slide img {
-
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;

@@ -4,10 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link rel="icon" href="public/img/logogram.png" type="image/svg+xml" />
   <link href="src/output.css" rel="stylesheet" />
   <link href="src/font.css" rel="stylesheet" />
-  <link href="src/animation.css" rel="stylesheet" />
   <link href="src/custom.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -16,11 +15,10 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="bg-white border-gray-200 fixed w-screen z-[99]">
-    <div class="w-11/12 flex flex-wrap items-center justify-between mx-auto p-4">
+  <nav class="bg-white border-gray-200 fixed w-screen z-[99] box-shadow">
+    <div class="w-11/12 flex flex-wrap items-center justify-between mx-auto p-4 px-0">
       <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="public/svg/mainlogo.svg" class="h-8" alt="TukanginAja Logo" />
-
       </a>
       <!-- button -->
       <button class="lg:hidden"
@@ -48,8 +46,7 @@
               class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Layanan Kami</a>
           </li>
           <li>
-            <a href="tentang_kami.html"
-              class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Tentang
+            <a href="tentang_kami.html" class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0 font-semibold">Tentang
               Kami</a>
           </li>
           <li>
@@ -70,82 +67,77 @@
   <!-- end nav -->
 
   <!-- hero -->
-  <section class="lg:h-screen bg-[#14B6B8] h-full sans3">
-    <div class="flex justify-center items-center h-full  pt-[5rem]">
-      <div class="grid lg:grid-cols-2 w-full place-items-center">
-        <div class="p-4">
-          <h1 class="lg:text-[4vh] xl:text-[7vh] text-[2.5rem] font-semibold text-white md:text-start text-center">
-            Mau Gampang, TukanginAja!
-          </h1>
-          <p class="text-white text-xl text-center md:text-start lg:text-lg">
-            Sekarang cari tukang lebih mudah dan praktis dengan pesan di
-            TukanginAja.id
-          </p>
-          <br />
-          <div class="flex justify-center md:justify-start">
-            <a href="#">
-              <button class="btn bg-white border-none hover:bg-slate-200">
-                <p class="text-[#14B6B8]">Daftar Jadi Mitra</p>
+  <section class="w-full h-fit md:h-screen pb-[2rem] bg-[#14B6B8] flex justify-center items-center">
+    <div class="w-11/12 mx-auto grid lg:grid-cols-2 place-items-center">
+      <div class="p-4 text-left lg:text-left">
+        <h1 class="text-[2.5rem] lg:text-[4vh] xl:text-[6vh] font-semibold text-white mb-4">
+          Mau Gampang, TukanginAja!
+        </h1>
+        <p class="text-white text-lg lg:text-xl mb-6">
+          Sekarang cari tukang lebih mudah dan praktis dengan pesan di TukanginAja.id
+        </p>
+        <div class="flex justify-start lg:justify-start mb-6">
+          <a href="#">
+            <button class="btn bg-white border-none hover:bg-slate-200">
+              <p class="text-[#14B6B8]">Daftar Jadi Mitra</p>
+            </button>
+          </a>
+        </div>
+        <hr class="my-5" />
+        <div class="w-full">
+          <h1 class="text-white font-semibold text-lg mb-3">Download Aplikasi</h1>
+          <div class="flex flex-row space-x-5">
+            <a href="https://play.google.com/store/apps/details?id=com.qqltech.tukang_segala_end_user">
+              <button class="btn btn-ghost hover:bg-transparent p-0">
+                <img src="public/svg/hero/playstore.svg" class="w-[10rem]" />
+              </button>
+            </a>
+            <a href="">
+              <button class="btn btn-ghost hover:bg-transparent p-0">
+                <img src="public/svg/hero/appstore.svg" class="w-[10rem]" />
               </button>
             </a>
           </div>
-          <hr class="mt-4" />
-          <div class="pt-4 w-full">
-            <h1 class="text-white font-semibold text-lg">
-              Download Aplikasi
-            </h1>
-            <div class="flex flex-row w-full space-x-5">
-              <a href="https://play.google.com/store/apps/details?id=com.qqltech.tukang_segala_end_user">
-                <button class="btn btn-ghost hover:bg-transparent p-0">
-                  <img src="public/svg/hero/playstore.svg" class="w-[10rem]" />
-                </button>
-              </a>
-
-              <a href="">
-                <button class="btn btn-ghost hover:bg-transparent p-0">
-                  <img src="public/svg/hero/appstore.svg" class="w-[10rem]" />
-                </button>
-              </a>
-            </div>
-          </div>
         </div>
-        <div>
-          <!-- IMG HERO -->
-          <div class="lg:h-[25rem] xl:h-[30rem] 2xl:h-[45rem] h-[32rem] md:h-auto float-animation">
-            <img src="public/svg/hero/hp.svg" alt="HP SVG" class="h-[26rem] md:h-auto lg:h-auto" />
-          </div>
-        </div>
+      </div>
+      <div class="md:flex justify-center items-center mt-5 lg:mt-0 float-animation hidden">
+        <!-- IMG HERO -->
+        <img src="public/svg/hero/hp.svg" alt="HP SVG" class="w-3/4" />
       </div>
     </div>
   </section>
+  
+  
+  
+  
   <!-- end hero -->
 
   <!-- kenapa tukangin -->
   <section class="h-full bg-white sans3">
-    <div class="flex justify-center items-center h-full lg:mx-32 pt-[5rem]">
+    <div class="w-11/12 mx-auto flex justify-center items-center h-full pt-[5rem]">
       <div class="grid lg:grid-cols-2 w-full place-items-center">
         <div class="hidden lg:block" data-aos="fade-up">
           <img src="public/svg/hero/tukang.svg" class="2xl:h-[50rem] h-auto" />
         </div>
         <div class="p-5 lg:p-0" data-aos="fade-down">
-          <h1 class="text-4xl text-center lg:text-start lg:text-4xl xl:text-6xl text-black font-sans font-semibold">
+          <h1 class="text-4xl text-center lg:text-start text-black font-sans font-semibold">
             Kenapa Harus Pesan di
             <span class="text-[#14B6B8]">TukanginAja.Id</span>?
           </h1>
           <div class="pt-10 h-full space-y-5 xl:space-y-10 text-2xl lg:text-xl xl:text-4xl">
             <div class="h-full flex flex-row items-center space-x-10">
               <img src="public/svg/hero/palu.svg" class="h-[2.5rem] lg:h-[4rem]" />
-              <h1 class="font-light text-gray-600">Tukang bersertifikasi</h1>
+              <h1 class="text-2xl font-light text-gray-600">Tukang bersertifikasi</h1>
             </div>
             <div class="h-full flex flex-row items-center space-x-10">
               <img src="public/svg/hero/pelayanan.svg" class="h-[2.5rem] lg:h-[4rem]" />
-              <h1 class="font-light text-gray-600">
+              <h1 class="text-2xl font-light text-gray-600">
                 Pembayaran Sekali Bayar untuk Semua Pekerjaan
               </h1>
             </div>
             <div class="h-full flex flex-row items-center space-x-10">
               <img src="public/svg/hero/jam.svg" class="h-[2.5rem] lg:h-[4rem]" />
-              <h1 class="font-light text-gray-600">
+              <h1 class="text-2xl font-light text-gray-600">
                 Same-day Service (Pesan hari ini, datang hari ini juga)
               </h1>
             </div>
@@ -158,134 +150,62 @@
 
   <!-- Kategori Layanan -->
   <section class="h-full bg-white pt-14 xl:pt-20 2xl:pt-10 sans3">
-    <h1 class="text-center text-3xl md:text-4xl lg:text-5xl text-black font-semibold" data-aos="fade-up">
-      Kategori Layanan Terbaik Kami
-    </h1>
-    <div class="lg:mx-32 p-[4rem]">
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full place-items-center gap-10">
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="layanan/ac.html">
-            <img src="public/svg/hero/kategori/ac.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="layanan/listrik.html">
-            <img src="public/svg/hero/kategori/listrik.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="layanan/pipa.html">
-            <img src="public/svg/hero/kategori/pipa.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="layanan/kebun.html">
-            <img src="public/svg/hero/kategori/taman.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="layanan/cctv.html">
-            <img src="public/svg/hero/kategori/cctv.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="layanan/homecleaning.html">
-            <img src="public/svg/hero/kategori/homecleaning.svg" class="h-full" data-aos="fade-up" />
-          </a>
-          <!-- 
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="#">
-            <img src="public/svg/hero/kategori/service.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="#">
-            <img src="public/svg/hero/kategori/kunci.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="#">
-            <img src="public/svg/hero/kategori/atap.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="#">
-            <img src="public/svg/hero/kategori/cat.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="#">
-            <img src="public/svg/hero/kategori/bangunan.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="#">
-            <img src="public/svg/hero/kategori/besi.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="#">
-            <img src="public/svg/hero/kategori/design.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="#">
-            <img src="public/svg/hero/kategori/gorden.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="#">
-            <img src="public/svg/hero/kategori/cucimobil.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="#">
-            <img src="public/svg/hero/kategori/nailart.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button>
-        <button
-          class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[20rem] xl:w-auto hover:bg-transparent">
-          <a href="#">
-            <img src="public/svg/hero/kategori/makeup.svg" class="h-full" data-aos="fade-up" />
-          </a>
-        </button> -->
-
+    <div class="w-11/12 mx-auto">
+      <h1 class="text-center text-3xl lg:text-4xl text-black font-semibold mb-7" data-aos="fade-up">
+        Kategori Layanan Terbaik Kami
+      </h1>
+      <div class="w-3/5 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 justify-items-center">
+          <button class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[10rem] xl:w-[12rem] hover:bg-transparent">
+            <a href="layanan/ac.html">
+              <img src="public/svg/hero/kategori/ac.svg" class="h-full w-full object-contain" data-aos="fade-up" />
+            </a>
+          </button>
+          <button class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[10rem] xl:w-[12rem] hover:bg-transparent">
+            <a href="layanan/listrik.html">
+              <img src="public/svg/hero/kategori/listrik.svg" class="h-full w-full object-contain" data-aos="fade-up" />
+            </a>
+          </button>
+          <button class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[10rem] xl:w-[12rem] hover:bg-transparent">
+            <a href="layanan/pipa.html">
+              <img src="public/svg/hero/kategori/pipa.svg" class="h-full w-full object-contain" data-aos="fade-up" />
+            </a>
+          </button>
+          <button class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[10rem] xl:w-[12rem] hover:bg-transparent">
+            <a href="layanan/kebun.html">
+              <img src="public/svg/hero/kategori/taman.svg" class="h-full w-full object-contain" data-aos="fade-up" />
+            </a>
+          </button>
+          <button class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[10rem] xl:w-[12rem] hover:bg-transparent">
+            <a href="layanan/cctv.html">
+              <img src="public/svg/hero/kategori/cctv.svg" class="h-full w-full object-contain" data-aos="fade-up" />
+            </a>
+          </button>
+          <button class="btn btn-ghost h-[10rem] w-[12rem] lg:h-[12rem] lg:w-[12rem] xl:h-[10rem] xl:w-[12rem] hover:bg-transparent">
+            <a href="layanan/homecleaning.html">
+              <img src="public/svg/hero/kategori/homecleaning.svg" class="h-full w-full object-contain" data-aos="fade-up" />
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   </section>
+  
   <!-- END Kategori Layanan -->
 
   <!-- POPULAR -->
-  <section class="h-full bg-white pt-14 xl:pt-20 2xl:pt-10 sans3">
-    <h1 class="text-center text-3xl md:text-4xl lg:text-5xl text-black font-semibold" data-aos="fade-up">
+  <section class="w-11/12 mx-auto h-full bg-white pt-14 xl:pt-20 2xl:pt-10 sans3">
+    <h1 class="text-center text-3xl lg:text-4xl text-black font-semibold" data-aos="fade-up">
       Apa aja nih layanan paling populer?
     </h1>
-    <h1 class="text-center pt-3 font-semibold text-2xl" data-aos="fade-up">
+    <h1 class="text-center pt-2 text-xl mb-7" data-aos="fade-up">
       Yuk, cek koleksi layanan terpopuler, favoritnya klien, dan penawaran
       terbaik kami di lokasimu!
     </h1>
     <div class="lg:mx-32 p-[4rem]">
       <div class="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 w-full place-items-center gap-10">
         <!-- 1 -->
-        <div class="card w-[25rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[23rem] bg-[#14B6B8] text-white shadow-2xl border-none"
+        <div class="card w-[23rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[20rem] bg-[#14B6B8] text-white shadow-2xl border-none"
           data-aos="flip-up" data-aos-duration="700">
           <figure>
             <img src="public/svg/hero/populer/ac.svg" class="w-full" />
@@ -305,16 +225,16 @@
                 <span> 4.9 </span>
               </div>
             </div>
-            <div class="pt-5">
+            <div class="pt-1">
               <a href="layanan/ac.html">
-                <h1 class="text-4xl">Tukang AC</h1>
+                <h1 class="text-2xl">Tukang AC</h1>
               </a>
 
             </div>
           </div>
         </div>
         <!-- 2 -->
-        <div class="card w-[25rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[23rem] bg-[#14B6B8] text-white shadow-2xl border-none"
+        <div class="card w-[23rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[20rem] bg-[#14B6B8] text-white shadow-2xl border-none"
           data-aos="flip-up" data-aos-duration="700">
           <figure>
             <img src="public/svg/hero/populer/cctv.svg" class="w-full" />
@@ -334,16 +254,16 @@
                 <span> 4.7 </span>
               </div>
             </div>
-            <div class="pt-5">
+            <div class="pt-1">
               <a href="layanan/cctv.html">
-                <h1 class="text-4xl">Tukang CTV</h1>
+                <h1 class="text-2xl">Tukang CTV</h1>
               </a>
 
             </div>
           </div>
         </div>
         <!-- 3 -->
-        <div class="card w-[25rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[23rem] bg-[#14B6B8] text-white shadow-2xl border-none"
+        <div class="card w-[23rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[20rem] bg-[#14B6B8] text-white shadow-2xl border-none"
           data-aos="flip-up" data-aos-duration="700">
           <figure>
             <img src="public/svg/hero/populer/taman.svg" class="w-full" />
@@ -363,16 +283,16 @@
                 <span> 4.8 </span>
               </div>
             </div>
-            <div class="pt-5">
+            <div class="pt-1">
               <a href="layanan/kebun.html">
-                <h1 class="text-4xl">Tukang Kebun</h1>
+                <h1 class="text-2xl">Tukang Kebun</h1>
               </a>
 
             </div>
           </div>
         </div>
         <!-- 4 -->
-        <div class="card w-[25rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[23rem] bg-[#14B6B8] text-white shadow-2xl border-none"
+        <div class="card w-[23rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[20rem] bg-[#14B6B8] text-white shadow-2xl border-none"
           data-aos="flip-up" data-aos-duration="700">
           <figure>
             <img src="public/svg/hero/populer/listrik.svg" class="w-full" />
@@ -392,16 +312,16 @@
                 <span> 4.6 </span>
               </div>
             </div>
-            <div class="pt-5">
+            <div class="pt-1">
               <a href="layanan/listrik.html">
-                <h1 class="text-4xl">Tukang Listrik</h1>
+                <h1 class="text-2xl">Tukang Listrik</h1>
               </a>
 
             </div>
           </div>
         </div>
         <!-- 5 -->
-        <div class="card w-[25rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[23rem] bg-[#14B6B8] text-white shadow-2xl border-none"
+        <div class="card w-[23rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[20rem] bg-[#14B6B8] text-white shadow-2xl border-none"
           data-aos="flip-up" data-aos-duration="700">
           <figure>
             <img src="public/svg/hero/populer/homecleaning.svg" class="w-full" />
@@ -421,16 +341,16 @@
                 <span> 4.5 </span>
               </div>
             </div>
-            <div class="pt-5">
+            <div class="pt-1">
               <a href="layanan/homecleaning.html">
-                <h1 class="text-4xl">Home Cleaning</h1>
+                <h1 class="text-2xl">Home Cleaning</h1>
               </a>
 
             </div>
           </div>
         </div>
         <!-- 6 -->
-        <div class="card w-[25rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[23rem] bg-[#14B6B8] text-white shadow-2xl border-none"
+        <div class="card w-[23rem] h-[20rem] 2xl:w-[25rem] 2xl:h-[20rem] bg-[#14B6B8] text-white shadow-2xl border-none"
           data-aos="flip-up" data-aos-duration="700">
           <figure>
             <img src="public/svg/hero/populer/pipa.svg" class="w-full" />
@@ -450,9 +370,9 @@
                 <span> 4.4 </span>
               </div>
             </div>
-            <div class="pt-5">
+            <div class="pt-1">
               <a href="layanan/pipa.html">
-                <h1 class="text-4xl">Tukang Pipa</h1>
+                <h1 class="text-2xl">Tukang Pipa</h1>
               </a>
 
             </div>
@@ -465,18 +385,18 @@
 
   <!-- testi  swipper-->
 
-  <section class="h-full bg-white pt-14 xl:pt-20 2xl:pt-10 sans3 ">
-    <h1 class="text-center text-3xl md:text-4xl lg:text-5xl text-black font-semibold" data-aos="fade-up">
+  <section class="w-11/12 mx-auto h-full bg-white pt-14 xl:pt-20 2xl:pt-10 sans3">
+    <h1 class="text-center text-3xl lg:text-4xl text-black font-semibold" data-aos="fade-up">
       Cerita <span class="text-[#14B6B8]">Mereka</span>
     </h1>
 
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide p-14">
-          <div class="rounded-2xl h-[30rem] bg-white shadow-lg shadow-[#14B6B8]">
+        <div class="swiper-slide p-7">
+          <div class="rounded-2xl h-[30rem] bg-white shadow-lg box-shadow">
             <div class="p-5 h-1/2">
               <div class="w-1/2 h-full">
-                <div class="w-[10rem] absolute">
+                <div class="w-[8rem] absolute">
                   <img src="public/svg/hero/ceritamereka/coment.svg" alt="" class="" />
                 </div>
                 <div class="w-1/2 absolute h-auto pt-[10%]">
@@ -487,8 +407,8 @@
               <div>
                 <div class="h-full flex flex-col items-center justify-center">
                   <div class="space-y-3">
-                    <h2 class="card-title text-3xl">Agus Sanjaya</h2>
-                    <p class="text-start text-lg">
+                    <h2 class="card-title text-2xl">Agus Sanjaya</h2>
+                    <p class="text-start text-">
                       “Pelayanannya sangat memuaskan. kebun saya menjadi
                       cantik dan indah, saya akan merekomendasi-kan
                       tukanginaja.id ini ke semua orang. Terima kasih banyak
@@ -505,11 +425,11 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide p-14">
-          <div class="rounded-2xl h-[30rem] bg-white shadow-lg shadow-[#14B6B8]">
+        <div class="swiper-slide p-7">
+          <div class="rounded-2xl h-[30rem] bg-white shadow-lg box-shadow">
             <div class="p-5 h-1/2">
               <div class="w-1/2 h-full">
-                <div class="w-[10rem] absolute">
+                <div class="w-[8rem] absolute">
                   <img src="public/svg/hero/ceritamereka/coment.svg" alt="" class="" />
                 </div>
                 <div class="w-1/2 absolute h-auto pt-[10%]">
@@ -520,8 +440,8 @@
               <div>
                 <div class="h-full flex flex-col items-center justify-center">
                   <div class="space-y-3">
-                    <h2 class="card-title text-3xl">Arjuna Wira</h2>
-                    <p class="text-start text-lg">
+                    <h2 class="card-title text-2xl">Arjuna Wira</h2>
+                    <p class="text-start text-">
                       “Hasilnya memuaskan! Semua orang wajib menggunakan
                       layanan dari tukanginaja.id. Saya akan memberitau
                       teman-teman saya. Terima kasih banyak atas
@@ -538,11 +458,11 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide p-14">
-          <div class="rounded-2xl h-[30rem] bg-white shadow-lg shadow-[#14B6B8]">
+        <div class="swiper-slide p-7">
+          <div class="rounded-2xl h-[30rem] bg-white shadow-lg box-shadow">
             <div class="p-5 h-1/2">
               <div class="w-1/2 h-full">
-                <div class="w-[10rem] absolute">
+                <div class="w-[8rem] absolute">
                   <img src="public/svg/hero/ceritamereka/coment.svg" alt="" class="" />
                 </div>
                 <div class="w-1/2 absolute h-auto pt-[10%]">
@@ -553,8 +473,8 @@
               <div>
                 <div class="h-full flex flex-col items-center justify-center">
                   <div class="space-y-3">
-                    <h2 class="card-title text-3xl">Salma Apriliana</h2>
-                    <p class="text-start text-lg">
+                    <h2 class="card-title text-2xl">Salma Apriliana</h2>
+                    <p class="text-start text-">
                       “Saya senang bisa menemukan tukang yang saya butuh kan
                       dengan cepat dan bagus. Saya tidak ragu untuk
                       merekomendasikan layanan mereka kepada teman-teman saya.
@@ -571,11 +491,11 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide p-14">
-          <div class="rounded-2xl h-[30rem] bg-white shadow-lg shadow-[#14B6B8]">
+        <div class="swiper-slide p-7">
+          <div class="rounded-2xl h-[30rem] bg-white shadow-lg box-shadow">
             <div class="p-5 h-1/2">
               <div class="w-1/2 h-full">
-                <div class="w-[10rem] absolute">
+                <div class="w-[8rem] absolute">
                   <img src="public/svg/hero/ceritamereka/coment.svg" alt="" class="" />
                 </div>
                 <div class="w-1/2 absolute h-auto pt-[10%]">
@@ -586,8 +506,8 @@
               <div>
                 <div class="h-full flex flex-col items-center justify-center">
                   <div class="space-y-3">
-                    <h2 class="card-title text-3xl">Mahalini</h2>
-                    <p class="text-start text-lg">
+                    <h2 class="card-title text-2xl">Mahalini</h2>
+                    <p class="text-start text-">
                       “Hasilnya luar biasa memuaskan!!! Semua orang wajib
                       menggunakan layanan dari tukanginaja.id. Terima kasih
                       banyak atas pelayanan nya! Saya akan menggunakannya lagi
@@ -611,23 +531,23 @@
   <!-- end testi swipper -->
 
   <!-- CARD HP MOCKUP -->
-  <section class="bg-white h-[50rem] md:h-[40rem]" data-aos="zoom-in-up">
-    <div class="lg:mx-32 p-[4rem]">
-      <div class="card lg:card-side bg-base-100 shadow-xl h-[45rem] md:h-[35rem] xl:h-[52rem] relative">
+  <section class="w-full bg-white h-[50rem] md:h-[40rem]" data-aos="zoom-in-up">
+    <div class="w-11/12 mx-auto">
+      <div class="card lg:card-side bg-base-100 shadow-xl h-[35rem] md:h-[35rem] xl:h-[40rem] relative">
         <div class="card-body h-full">
           <div class="h-full flex flex-col justify-center w-full">
-            <div class="space-y-5 xl:space-y-10">
-              <h1 class="text-2xl xl:text-4xl font-semibold">
+            <div class="space-y-5 xl:space-y-8">
+              <h1 class="text-3xl lg:text-3xl font-semibold">
                 Gak perlu repot lagi untuk
                 <span class="text-[#093D77]">cari tukang</span>, sekarang kamu
                 tinggal buka hape aja.
               </h1>
               <br />
-              <p class="text-2xl xl:text-[1.6rem]">
+              <p class="text-xl">
                 Nikmati banyak pilihan tukang, promo, dan fitur eksklusif di
                 <span class="text-[#093D77]">TukanginAja.id</span>
               </p>
-              <p class="text-[1.6rem]">
+              <p class="text-xl">
                 Download aplikasi
                 <span class="text-[#093D77]">TukanginAja.id</span>
                 sekarang
@@ -648,195 +568,95 @@
             </div>
           </div>
         </div>
-        <figure class="w-full justify-center items-center">
-          <img src="public/svg/hero/hp2.svg" class="lg:w[10rem] xl:w-[25rem] hidden lg:flex" />
-        </figure>
+        <div class="w-full justify-center items-center hidden md:flex">
+          <img src="public/svg/hero/hp2.svg" class="w-2/4"/>
+        </div>
       </div>
     </div>
   </section>
-  <div class="xl:block hidden w-full bg-[#093D77] h-[15rem]"></div>
+  <div class="xl:block hidden w-full bg-[#093D77] h-[8.5rem]"></div>
   <!-- END CARD -->
+  <!---FOOTER-->
+  <footer class="footer py-[6rem] bg-[#093D77] sans3 text-white">
+    <div class="w-11/12 mx-auto flex flex-col lg:flex-row justify-between">
+        <aside class="flex flex-col lg:flex-row lg:space-x-2">
+            <div class="items-start mt-[-10px] mb-4">
+                <img src="public/svg/logo-footer.svg" class="h-[50px]" />
+            </div>
 
-  <!--  FOOTER  DESKTOP -->
-  <footer class="footer py-[6rem] hidden lg:flex justify-around bg-[#093D77] sans3 text-white ">
-    <aside class="flex space-x-3 lg:space-x-2">
-      <div class="items-start">
-        <img src="logo.svg" class="h-[50px]" />
-      </div>
+            <div class="h-full text-white flex flex-col text-start">
+                <h6 class="text-white text-2xl font-semibold text-center">
+                    TukanginAja.id
+                </h6>
+                <div>
+                    <ul class="list-none">
+                        <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="tentang_kami.html">Tentang
+                                Kami</a></li>
+                        <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
 
-      <div class="h-full text-white space-y-5 flex flex-col text-start">
-        <h1 class="text-white text-3xl font-semibold text-center mt-2">
-          TukanginAja.id
-        </h1>
         <div>
-          <p class="text-xl">Tentang Kami</p>
-          <p class="text-xl">Blog</p>
+            <h6 class="text-2xl font-semibold">Kategori</h6>
+            <ul class="list-none">
+                <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="layanan/ac.html">Tukang Ac</a></li>
+                <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="layanan/massage.html">Massege</a></li>
+                <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="layanan/listrik.html">Tukang Listrik</a></li>
+                <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="layanan.html">Lainnya</a></li>
+            </ul>
         </div>
-      </div>
-    </aside>
-
-    <nav>
-      <h6 class="text-2xl font-semibold">Kategori</h6>
-      <a href="layanan/ac.html" class="link link-hover">Tukang Ac</a>
-      <a href="layanan/cctv.html" class="link link-hover">CCTV</a>
-      <a href="layanan/listrik.html" class="link link-hover">Tukang Listrik</a>
-      <a href="layanan.html" class="link link-hover">Lainya</a>
-    </nav>
-    <nav>
-      <h6 class="text-2xl font-semibold">Menjadi Mitra</h6>
-      <a href="kontak_kami.html" class="link link-hover">Cara Menjadi Mitra</a>
-
-    </nav>
-    <nav>
-      <h6 class="text-2xl font-semibold">Hubungi Kami</h6>
-      <a href="kontak_kami.html" class="link link-hover">Kontak Kami</a>
-      <a href="kebijakan.html" class="link link-hover">Kebijakan</a>
-
-    </nav>
-  </footer>
-  <div class="w-full bg-white justify-center hidden lg:flex">
-    <div class="container flex justify-between text-[#7C7C7C] h-full items-center">
-      <h1 class="font-semibold text-xl py-2 text-black lg:text-sm xl:text-lg">
-        Copyright © 2023 PT JOYO SEJAHTERA SENTOSA EKAPRIMA.
-        <span class="font-thin">All rights reserved.</span>
+        <div>
+            <h6 class="text-2xl font-semibold">Menjadi Mitra</h6>
+            <ul class="list-none">
+                <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="mitra.html">Cara Menjadi Mitra</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h6 class="text-2xl font-semibold">Hubungi Kami</h6>
+            <ul class="list-none">
+                <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="kontak_kami.html">Kontak Kami</a></li>
+                <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="kebijakan.html">Kebijakan Privasi</a>
+                </li>
+            </ul>
+        </div>
+</footer>
+  <div class="w-full py-2">
+    <div
+      class="w-11/12 mx-auto flex flex-col lg:flex-row flex-row-reverse flex-col-reverse justify-between text-[#7C7C7C] items-start lg:items-center">
+      <h1 class="font-semibold py-1 text-black text-[12px]">
+        Copyright © 2024 PT Joyo Sejahtera Sentosa Ekaprima.
+        <span class="font-normal">All rights reserved.</span>
       </h1>
-      <div class="h-full items-center flex p-3 space-x-5">
-        <a href="https://wa.me/+628113288966?text=Halo%20kak,%20saya%20ingin%20bertanya-tanya%20mengenai%20TukanginAja">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/wa.svg" class="lg:h-1/2 xl:h-full" />
-          </button>
+      <div class="flex justify-start lg:justify-end items-center mb-3 lg:mb-0">
+        <a href="https://wa.me/+628113288966?text=Halo%20kak,%20saya%20ingin%20bertanya-tanya%20mengenai%20TukanginAja" class="btn-social-media hover:bg-transparent pl-0" >
+            <img src="public/svg/social-media/social-media-wa.svg" />
         </a>
-        <a href="https://www.instagram.com/tukanginajaid?igsh=d2o1OWZ6ZHIyMGIz">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/ig.svg" class="lg:h-1/2 xl:h-full" /></button></a>
-        <a href="https://www.facebook.com/profile.php?id=61553346410387">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/fb.svg" class="lg:h-1/2 xl:h-full" /></button></a>
-        <a href="https://www.tiktok.com/@tukanginaja">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/tiktok.svg" class="lg:h-1/2 xl:h-full" /></button></a>
-      </div>
+        <a href="https://www.instagram.com/tukanginajaid?igsh=d2o1OWZ6ZHIyMGIz" class="btn-social-media hover:bg-transparent pl-2">
+            <img src="public/svg/social-media/social-media-ig.svg" />
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61553346410387" class="btn-social-media hover:bg-transparent pl-2">
+            <img src="public/svg/social-media/social-media-fb.svg" />
+        </a>
+        <a href="https://www.tiktok.com/@tukanginaja" class="btn-social-media hover:bg-transparent pl-2">
+            <img src="public/svg/social-media/social-media-tt.svg"/>
+        </a>
+    </div>
     </div>
   </div>
-  <!--  END FOOTER DESKTOP -->
 
-  <!-- FOOTER MOBILE  -->
-  <footer class="bg-[#093D77] sans3 lg:hidden block">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-      <div class="md:flex md:justify-between">
-        <div class="mb-6 md:mb-0">
-          <div class="flex items-center space-x-3">
-            <img src="logo.svg" class="h-[50px]" />
-            <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">TukanginAja</span>
-          </div>
-          <div class="h-full my-5">
-            <a href="#" class="hover:underline text-white">
-              <h1 class="text-2xl text-white font-semibold">Tentang Kami</h1>
-            </a>
-            <a href="#" class="hover:underline text-white">
-              <h1 class="text-2xl text-white font-semibold">Blog</h1>
-            </a>
-          </div>
-        </div>
-        <hr class="py-5" />
-        <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-3">
-          <div>
-            <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
-              Kategori
-            </h2>
-            <ul class="text-white font-normal space-y-2">
-              <li>
-                <a href="#" class="hover:underline">
-                  <p>Tukang Ac</p>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="hover:underline">
-                  <p>Massege</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">
-                  <p>Lainya</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
-              Menjadi Mitra
-            </h2>
-            <ul class="text-white font-normal space-y-2">
-              <li>
-                <a href="kontak_kami.html" class="hover:underline">
-                  <p>Cara Menjadi Mitra</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
-              Hubungi Kami
-            </h2>
-            <ul class="text-white font-normal space-y-2">
-              <li>
-                <a href="kontak_kami.html" class="hover:underline">
-                  <p>Kontak Kami</p>
-                </a>
-              </li>
-
-              <li>
-                <a href="kebijakan.html" class="hover:underline">
-                  <p>Kebijakan Privasi</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">
-                  <p>Lainya</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="sm:flex sm:items-center sm:justify-between bg-white p-4 md:flex-col">
-      <span class="flex justify-center text-[11px] md:text-xl text-black font-semibold">Copyright © 2023 PT JOYO
-        SEJAHTERA SENTOSA EKAPRIMA.
-        <span class="font-thin">All rights reserved.</span>
-      </span>
-      <div class="flex mt-4 justify-center">
-        <a href="https://wa.me/+628113288966?text=Halo%20kak,%20saya%20ingin%20bertanya-tanya%20mengenai%20TukanginAja">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/wa.svg" class="h-[2.5rem]" />
-          </button>
-        </a>
-        <a href="https://www.instagram.com/tukanginajaid?igsh=d2o1OWZ6ZHIyMGIz">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/ig.svg" class="h-[2.5rem]" /></button></a>
-        <a href="https://www.facebook.com/profile.php?id=61553346410387">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/fb.svg" class="h-[2.5rem]" /></button></a>
-        <a href="https://www.tiktok.com/@tukanginaja">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/tiktok.svg" class="h-[2.5rem]" /></button></a>
-      </div>
-    </div>
-    </div>
-  </footer>
-
-  <div class="flex flex-row flying items-center hover:opacity-100 opacity-95 cursor-pointer">
-    <div class="hidden mr-[-20px] rounded-full bg-white p-4 h-max box-shadow z-[99] md:flex">
-      <img src="public/img/message-typing.png" width="30px" height="30px" alt="Message Typing Icon" />
-      <span class="ml-3 self-center text-[16px]">Butuh Bantuan</span>
+  <a href="flying_button.html" class="flex flex-row flying items-center hover:opacity-100 opacity-95 cursor-pointer">
+    <div class="hidden mr-[-20px] rounded-full bg-white p-4 h-max box-shadow z-10 md:flex">
+        <img src="public/img/message-typing.png" width="30px" height="30px" alt="Message Typing Icon"/>
+        <span class="ml-3 self-center text-[16px]">Butuh Bantuan</span>
     </div>
     <div class="hidden mr-5 w-[25px] h-[25px] rounded bg-white rotate-45 md:flex"></div>
     <div class="rounded-full bg-white p-4 box-shadow">
-      <img src="public/img/cs.png" width="50px" alt="Customer Service Icon" />
+        <img src="public/img/cs.png" width="50px" alt="Customer Service Icon"/>
     </div>
-  </div>
-  <!-- END FOOTER MOBILE -->
+</a>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script/swiper.js"></script>

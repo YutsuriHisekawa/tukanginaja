@@ -4,11 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link rel="icon" href="public/img/logogram.png" />
   <link href="src/output.css" rel="stylesheet" />
-  <link href="src/custom.css" rel="stylesheet" />
   <link href="src/font.css" rel="stylesheet" />
-  <link href="src/animation.css" rel="stylesheet" />
+  <link href="src/custom.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>TukanginAja.id</title>
@@ -16,12 +15,10 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="bg-white border-gray-200 fixed w-screen z-[99]">
-    <div class="w-11/12 flex flex-wrap items-center justify-between mx-auto p-4">
+  <nav class="bg-white border-gray-200 fixed w-screen z-[99] box-shadow">
+    <div class="w-11/12 flex flex-wrap items-center justify-between mx-auto p-4 px-0">
       <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="public/svg/logo.svg" class="h-8" alt="TukanginAja Logo" />
-        <span class="self-center text-2xl whitespace-nowrap sans3 text-[#083D77] font-bold">Tukangin<span
-            class="text-[#14B6B8]">Aja</span></span>
+        <img src="public/svg/mainlogo.svg" class="h-8" alt="TukanginAja Logo" />
       </a>
       <!-- button -->
       <button class="lg:hidden"
@@ -72,12 +69,12 @@
 
   <!-- HERO -->
   <div class="bg-[#093D77] bg-cover">
-    <section class="flex items-center md:h-screen h-fit w-auto">
-      <div class="container mx-auto flex mt-16 items-center flex-col md:flex-row relative md:z-10 z-99 p-5 md:p-0">
+    <section class="flex items-center md:h-screen h-fit w-auto overflow-hidden">
+      <div class="w-11/12 mx-auto flex mt-16 items-center flex-col md:flex-row relative md:z-10 z-99 p-5 md:p-0">
         <!-- Bagian Teks di Sisi Kiri -->
         <div class="md:w-full lg:w-1/2 w-full mb-4 md:mb-0 p-4">
           <h1
-            class="text-2xl font-bold sm:text-2xl md:text-4xl lg:text-5xl md:mb-4 pt-8 text-white hue-rotate-0 sans3 md:z-10 z-10"
+            class="text-2xl font-semibold sm:text-2xl md:text-4xl lg:text-5xl md:mb-4 pt-8 text-white hue-rotate-0 sans3 md:z-10 z-10"
             data-aos="fade-right">
             Kami menyediakan berbagai tukang untuk masalahmu.
           </h1>
@@ -87,611 +84,289 @@
     <!-- Bagian Gambar di Sisi Kanan Pojok Kanan Atas -->
 
     <div class="absolute top-11 pt-5 left-0 md:w-full hidden md:flex justify-end z-1">
-      <img src="public/svg/layanan/sip.svg" alt="Hero Image"
-        class="md:w-[600px] lg:w-[850px] xl:w-[750px] 2xl:w-[950px]" data-aos="fade-left" />
+      <img src="public/svg/layanan/sip.svg" alt="Hero Image" class="h-auto" data-aos="fade-left" />
     </div>
   </div>
   <!--END HERO-->
 
   <!-- apa aja nih -->
-  <section class="w-full bg-white mt-15 md:rounded-t-[80px] lg:rounded-t-[15%]">
-    <h1
-      class="sans3 font-semibold text-black text-center md:pt-32 pt-10 md:mb-10 mb-3 text-2xl md:text-5xl 2xl:text-7xl md:font-semibold"
+  <section class="w-11/12 mx-auto bg-white mt-15 md:rounded-t-[80px] lg:rounded-t-[15%]">
+    <h1 class="sans3 font-semibold text-black text-center text-2xl md:text-4xl 2xl:text-4xl md:font-semibold"
       data-aos="fade-up">
       Apa aja nih layanan paling populer?
     </h1>
-    <p class="sans3 px-4 text-black text-center text-m xl:text-2xl 2xl:text-4xl font-semibold md:mb-8"
-      data-aos="fade-up">
+    <p class="sans3 px-4 text-black text-center text-m xl:text-xl 2xl:text-xl md:mb-8" data-aos="fade-up">
       Yuk, dicek koleksi tukang populer, favoritnya klien, dan penawaran
       terbaik kami di lokasimu!
     </p>
     <div class="flex items-center justify-center pt-10 pb-10">
       <div
-        class="grid gap-x-10 gap-y-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 px-10 xl:px-16 2xl:px-4 sans3">
+        class="grid gap-x-10 gap-y-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 px-10 xl:px-16 2xl:px-4 sans3">
         <!--Card-->
+
+        <!--  -->
+
+
         <!-- 1 -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/ac.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+        <div class=" rounded-2xl  shadow-xl bg-gray-100 max-w-sm mx-auto " data-aos="zoom-in">
+          <div class="p-6">
+            <div>
+              <div
+                class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
+                <div class="flex justify-center w-full h-auto  bg-none rounded-2xl">
+                  <img src="public/svg/layanan/icon/ac.svg" alt="Deskripsi Gambar"
+                    class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Tukang AC
-          </div>
+            <div
+              class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
+              Tukang AC
+            </div>
 
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Nikmati pembersihan dan perbaikan untuk AC Anda dimanapun dan
-              kapanpun. . .
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <a href="layanan/ac.html" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
+            <div
+              class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
+              <p>
+                Nikmati pembersihan dan perbaikan untuk AC Anda dimanapun dan
+                kapanpun. . .
               </p>
-            </a>
+            </div>
+
+          </div>
+
+          <div class="px-6  pb-8">
+            <hr />
+            <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
+              <a href="layanan/ac.html" class="flex space-x-5 items-center w-full">
+                <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
+                  <img src="public/svg/layanan/lingkaran.svg" />
+                </button>
+                <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
+                  Lihat Selengkapnya...
+                </p>
+              </a>
+            </div>
+
           </div>
         </div>
         <!-- 2 -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/listrik.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+        <div class=" rounded-2xl  shadow-xl bg-gray-100 max-w-sm mx-auto " data-aos="zoom-in">
+          <div class="p-6">
+            <div>
+              <div
+                class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
+                <div class="flex justify-center w-full h-auto  bg-none rounded-2xl">
+                  <img src="public/svg/layanan/icon/listrik.svg" alt="Deskripsi Gambar"
+                    class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Tukang Listrik
-          </div>
+            <div
+              class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
+              Tukang Listrik
+            </div>
 
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Dapatkan layanan kelistrikan yang aman dan terpercaya untuk
-              rumah Anda.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <a href="layanan/listrik.html" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
+            <div
+              class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
+              <p>
+                Nikmati perbaikan dan pengecekan listrik rumah Anda dengan cepat, tepat, dan . . .
               </p>
-            </a>
+            </div>
+
+          </div>
+
+          <div class="px-6  pb-8">
+            <hr />
+            <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
+              <a href="layanan/listrik.html" class="flex space-x-5 items-center w-full">
+                <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
+                  <img src="public/svg/layanan/lingkaran.svg" />
+                </button>
+                <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
+                  Lihat Selengkapnya...
+                </p>
+              </a>
+            </div>
+
           </div>
         </div>
+
         <!-- 3 -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/pipa.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+        <div class=" rounded-2xl  shadow-xl bg-gray-100 max-w-sm mx-auto " data-aos="zoom-in">
+          <div class="p-6">
+            <div>
+              <div
+                class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
+                <div class="flex justify-center w-full h-auto  bg-none rounded-2xl">
+                  <img src="public/svg/layanan/icon/pipa.svg" alt="Deskripsi Gambar"
+                    class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Tukang Pipa
-          </div>
+            <div
+              class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
+              Tukang Pipa
+            </div>
 
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Solusi terbaik untuk semua masalah perpipaan di rumah Anda,
-              cepat dan efisien.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <a href="/layanan/pipa.html" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
+            <div
+              class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
+              <p>
+                Nikmati pembersihan dan perbaikan saluran pipa Anda dengan . . .
               </p>
-            </a>
+            </div>
+
+          </div>
+
+          <div class="px-6  pb-8">
+            <hr />
+            <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
+              <a href="layanan/pipa.html" class="flex space-x-5 items-center w-full">
+                <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
+                  <img src="public/svg/layanan/lingkaran.svg" />
+                </button>
+                <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
+                  Lihat Selengkapnya...
+                </p>
+              </a>
+            </div>
+
           </div>
         </div>
         <!-- 4 -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/taman.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+        <div class=" rounded-2xl  shadow-xl bg-gray-100 max-w-sm mx-auto " data-aos="zoom-in">
+          <div class="p-6">
+            <div>
+              <div
+                class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
+                <div class="flex justify-center w-full h-auto  bg-none rounded-2xl">
+                  <img src="public/svg/layanan/icon/taman.svg" alt="Deskripsi Gambar"
+                    class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Tukang Kebun
-          </div>
+            <div
+              class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
+              Tukang Kebun
+            </div>
 
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Layanan profesional untuk desain dan perawatan kebun Anda,
-              memberikan keindahan dan kenyamanan.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <a href="layanan/kebun.html" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
+            <div
+              class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
+              <p>
+                Membantu Anda merawat dan menyempurnakan taman. . .
               </p>
-            </a>
+            </div>
+
+          </div>
+
+          <div class="px-6  pb-8">
+            <hr />
+            <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
+              <a href="layanan/kebun.html" class="flex space-x-5 items-center w-full">
+                <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
+                  <img src="public/svg/layanan/lingkaran.svg" />
+                </button>
+                <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
+                  Lihat Selengkapnya...
+                </p>
+              </a>
+            </div>
+
           </div>
         </div>
         <!-- 5 -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/cleaning.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+        <div class=" rounded-2xl  shadow-xl bg-gray-100 max-w-sm mx-auto " data-aos="zoom-in">
+          <div class="p-6">
+            <div>
+              <div
+                class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
+                <div class="flex justify-center w-full h-auto  bg-none rounded-2xl">
+                  <img src="public/svg/layanan/icon/cleaning.svg" alt="Deskripsi Gambar"
+                    class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Cleaning Services
-          </div>
+            <div
+              class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
+              Home Cleaning
+            </div>
 
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Layanan kebersihan komprehensif untuk rumah dan kantor Anda,
-              menjaga lingkungan tetap bersih dan sehat.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <a href="layanan/homecleaning.html" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
+            <div
+              class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
+              <p>
+                Nikmati layanan pembersihan untuk rumah Anda dimanapun dan kapanpun. . .
               </p>
-            </a>
+            </div>
+
+          </div>
+
+          <div class="px-6  pb-8">
+            <hr />
+            <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
+              <a href="layanan/homecleaning.html" class="flex space-x-5 items-center w-full">
+                <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
+                  <img src="public/svg/layanan/lingkaran.svg" />
+                </button>
+                <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
+                  Lihat Selengkapnya...
+                </p>
+              </a>
+            </div>
+
           </div>
         </div>
 
         <!-- Tukang CCTV -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/cctv.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+
+        <div class=" rounded-2xl  shadow-xl bg-gray-100 max-w-sm mx-auto " data-aos="zoom-in">
+          <div class="p-6">
+            <div>
+              <div
+                class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
+                <div class="flex justify-center w-full h-auto  bg-none rounded-2xl">
+                  <img src="public/svg/layanan/icon/cctv.svg" alt="Deskripsi Gambar"
+                    class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Tukang CCTV
-          </div>
-
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Dapatkan layanan instalasi CCTV profesional untuk meningkatkan
-              keamanan rumah atau bisnis Anda.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <a href="layanan/cctv.html" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
-              </p>
-            </a>
-          </div>
-        </div>
-        <!-- 6 -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/kunci.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+            <div
+              class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
+              Tukang CCTV
             </div>
-          </div>
 
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Layanan Kunci
-          </div>
-
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Solusi cepat dan aman untuk semua kebutuhan kunci dan pengamanan
-              rumah Anda.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <router-link to="/layanankami/cleaning" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
+            <div
+              class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
+              <p>
+                Dapatkan layanan instalasi CCTV profesional untuk meningkatkan
+                keamanan rumah atau bisnis Anda.
               </p>
-            </router-link>
-          </div>
-        </div>
-        <!-- 7 -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/atap.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
             </div>
+
           </div>
 
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Tukang Atap
-          </div>
-
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Nikmati perbaikan dan pemasangan atap dimanapun dan kapanpun. .
-              .
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <router-link to="/layanankami/cleaning" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
-              </p>
-            </router-link>
-          </div>
-        </div>
-        <!-- 8 -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/bangunan.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
+          <div class="px-6  pb-8">
+            <hr />
+            <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
+              <a href="layanan/cctv.html" class="flex space-x-5 items-center w-full">
+                <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
+                  <img src="public/svg/layanan/lingkaran.svg" />
+                </button>
+                <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
+                  Lihat Selengkapnya...
+                </p>
+              </a>
             </div>
-          </div>
 
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Layanan Bangunan
-          </div>
-
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Solusi lengkap untuk semua kebutuhan konstruksi dan renovasi
-              bangunan Anda.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <router-link to="/layanankami/construction" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
-              </p>
-            </router-link>
-          </div>
-        </div>
-        <!-- 9 -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/cat.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
-            </div>
-          </div>
-
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Tukang Cat
-          </div>
-
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Dapatkan layanan pengecatan profesional dengan hasil yang rapi
-              dan tahan lama.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <router-link to="/layanankami/painting" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
-              </p>
-            </router-link>
           </div>
         </div>
 
-        <!-- 10 -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/besi.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
-            </div>
-          </div>
 
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Tukang Besi
-          </div>
 
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Dapatkan layanan pembuatan dan pemasangan berbagai produk besi
-              dengan kualitas terbaik.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <router-link to="/layanankami/besi" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
-              </p>
-            </router-link>
-          </div>
-        </div>
-
-        <!-- 11 -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/design.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
-            </div>
-          </div>
-
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Tukang Desain Interior
-          </div>
-
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Dapatkan layanan desain interior yang kreatif dan fungsional
-              untuk rumah atau bisnis Anda.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <router-link to="/layanankami/design" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
-              </p>
-            </router-link>
-          </div>
-        </div>
-
-        <!-- Tukang Gorden -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/gorden.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
-            </div>
-          </div>
-
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Tukang Gorden
-          </div>
-
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Dapatkan layanan pemasangan gorden dengan berbagai model dan
-              kualitas terbaik untuk rumah Anda.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <router-link to="/layanankami/gorden" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
-              </p>
-            </router-link>
-          </div>
-        </div>
-
-        <!-- Cuci Mobil -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/cucimobil.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
-            </div>
-          </div>
-
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Cuci Mobil
-          </div>
-
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Dapatkan layanan cuci mobil profesional untuk menjaga kebersihan
-              kendaraan Anda.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <router-link to="/layanankami/cucimobil" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
-              </p>
-            </router-link>
-          </div>
-        </div>
-
-        <!-- Nail Art -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/nailart.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
-            </div>
-          </div>
-
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Nail Art
-          </div>
-
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Dapatkan layanan nail art kreatif untuk menambahkan keindahan
-              pada kuku Anda.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <router-link to="/layanankami/nailart" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
-              </p>
-            </router-link>
-          </div>
-        </div>
-
-        <!-- Tukang Makeup -->
-        <div
-          class="md:w-auto xl:w-[300px] 2xl:w-[350px] h-auto mx-auto bg-gray-100 shadow-xl hover:shadow-none rounded-3xl duration-300 relative p-4 scroll"
-          data-aos="zoom-in">
-          <div
-            class="rounded-2xl overflow-hidden w-auto h-auto md:w-24 lg:w-16 2xl:w-220 md:h-auto md:bg-[#EDFCFF] ml-0 justify-center flex md:block">
-            <div class="flex justify-center w-full h-auto bg-[#EDFCFF] bg-none rounded-2xl">
-              <img src="public/svg/layanan/icon/makeup.svg" alt="Deskripsi Gambar"
-                class="object-cover w-[7rem] 2xl:w-20 xl:w-20 h-auto md:w-full md:h-full" />
-            </div>
-          </div>
-
-          <div
-            class="text-center font-bold md:text-start mt-2 text-xl md:text-3xl md:font-semibold text-black xl:text-xl">
-            Tukang Makeup
-          </div>
-
-          <div
-            class="text-center md:text-start mt-2 !font-normal md:text-lg text-black h-auto md:h-[12vh] items-center flex xl:text-sm 2xl:text-lg">
-            <p>
-              Dapatkan layanan makeup profesional untuk tampil cantik di
-              berbagai acara.
-            </p>
-          </div>
-          <hr class="mt-8 md:mt-8 lg:mt-0 2xl:mt-8" />
-          <div class="flex p-4 justify-center md:justify-start space-x-5 items-center">
-            <router-link to="/layanankami/makeup" class="flex space-x-5 items-center w-full">
-              <button class="bg-[#093D77] hover:bg-[#14B6B8] p-2 rounded-full duration-300">
-                <img src="public/svg/layanan/lingkaran.svg" />
-              </button>
-              <p class="sans3 font-semibold lg:text-md xl:text-lg text-[#093D77]">
-                Lihat Selengkapnya...
-              </p>
-            </router-link>
-          </div>
-        </div>
 
 
 
@@ -771,177 +446,86 @@
 
   <!-- end keuntungan -->
 
-  <!--  FOOTER  DESKTOP -->
-  <footer class="footer py-[6rem] hidden lg:flex justify-around bg-[#093D77] sans3 text-white">
-    <aside class="flex space-x-3 lg:space-x-2">
-      <div class="items-start">
-        <img src="logo.svg" class="h-[50px]" />
-      </div>
-
-      <div class="h-full text-white space-y-5 flex flex-col text-start">
-        <h1 class="text-white text-3xl font-semibold text-center mt-2">
-          TukanginAja.id
-        </h1>
-        <div>
-          <p class="text-xl">Tentang Kami</p>
-          <p class="text-xl">Blog</p>
+  <!---FOOTER-->
+  <footer class="footer py-[6rem] bg-[#093D77] sans3 text-white">
+    <div class="w-11/12 mx-auto flex flex-col lg:flex-row justify-between">
+      <aside class="flex flex-col lg:flex-row lg:space-x-2">
+        <div class="items-start mt-[-10px] mb-4">
+          <img src="public/svg/logo-footer.svg" class="h-[50px]" />
         </div>
+
+        <div class="h-full text-white flex flex-col text-start">
+          <h6 class="text-white text-2xl font-semibold text-center">
+            TukanginAja.id
+          </h6>
+          <div>
+            <ul class="list-none">
+              <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="tentang_kami.html">Tentang
+                  Kami</a></li>
+              <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <div>
+        <h6 class="text-2xl font-semibold">Kategori</h6>
+        <ul class="list-none">
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="layanan/ac.html">Tukang Ac</a></li>
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="layanan/massage.html">Massege</a>
+          </li>
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="layanan/listrik.html">Tukang
+              Listrik</a></li>
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="layanan.html">Lainnya</a></li>
+        </ul>
       </div>
-    </aside>
-
-    <nav>
-      <h6 class="text-2xl font-semibold">Kategori</h6>
-      <a href="layanan/ac.html" class="link link-hover">Tukang Ac</a>
-      <a href="layanan/cctv.html" class="link link-hover">CCTV</a>
-      <a href="layanan/listrik.html" class="link link-hover">Tukang Listrik</a>
-      <a href="layanan.html" class="link link-hover">Lainya</a>
-    </nav>
-    <nav>
-      <h6 class="text-2xl font-semibold">Menjadi Mitra</h6>
-      <a href="kontak_kami.html" class="link link-hover">Cara Menjadi Mitra</a>
-
-    </nav>
-    <nav>
-      <h6 class="text-2xl font-semibold">Hubungi Kami</h6>
-      <a href="kontak_kami.html" class="link link-hover">Kontak Kami</a>
-      <a href="kebijakan.html" class="link link-hover">Kebijakan</a>
-
-    </nav>
+      <div>
+        <h6 class="text-2xl font-semibold">Menjadi Mitra</h6>
+        <ul class="list-none">
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="mitra.html">Cara Menjadi Mitra</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-2xl font-semibold">Hubungi Kami</h6>
+        <ul class="list-none">
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="kontak_kami.html">Kontak Kami</a>
+          </li>
+          <li class="text-[16px] mt-4 cursor-pointer hover:text-[#14B6B8]"><a href="kebijakan.html">Kebijakan
+              Privasi</a>
+          </li>
+        </ul>
+      </div>
   </footer>
-  <div class="w-full bg-white justify-center hidden lg:flex">
-    <div class="container flex justify-between text-[#7C7C7C] h-full items-center">
-      <h1 class="font-semibold text-xl py-2 text-black lg:text-sm xl:text-lg">
-        Copyright © 2023 PT JOYO SEJAHTERA SENTOSA EKAPRIMA.
-        <span class="font-thin">All rights reserved.</span>
+  <div class="w-full py-2">
+    <div
+      class="w-11/12 mx-auto flex flex-col lg:flex-row flex-row-reverse flex-col-reverse justify-between text-[#7C7C7C] items-start lg:items-center">
+      <h1 class="font-semibold py-1 text-black text-[12px]">
+        Copyright © 2024 PT Joyo Sejahtera Sentosa Ekaprima.
+        <span class="font-normal">All rights reserved.</span>
       </h1>
-      <div class="h-full items-center flex p-3 space-x-5">
-        <a href="https://wa.me/+628113288966?text=Halo%20kak,%20saya%20ingin%20bertanya-tanya%20mengenai%20TukanginAja">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/wa.svg" class="lg:h-1/2 xl:h-full" />
-          </button>
+      <div class="flex justify-start lg:justify-end items-center mb-3 lg:mb-0">
+        <a href="https://wa.me/+628113288966?text=Halo%20kak,%20saya%20ingin%20bertanya-tanya%20mengenai%20TukanginAja"
+          class="btn-social-media hover:bg-transparent pl-0">
+          <img src="public/svg/social-media/social-media-wa.svg" />
         </a>
-        <a href="https://www.instagram.com/tukanginajaid?igsh=d2o1OWZ6ZHIyMGIz">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/ig.svg" class="lg:h-1/2 xl:h-full" /></button></a>
-        <a href="https://www.facebook.com/profile.php?id=61553346410387">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/fb.svg" class="lg:h-1/2 xl:h-full" /></button></a>
-        <a href="https://www.tiktok.com/@tukanginaja">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/tiktok.svg" class="lg:h-1/2 xl:h-full" /></button></a>
+        <a href="https://www.instagram.com/tukanginajaid?igsh=d2o1OWZ6ZHIyMGIz"
+          class="btn-social-media hover:bg-transparent pl-2">
+          <img src="public/svg/social-media/social-media-ig.svg" />
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61553346410387"
+          class="btn-social-media hover:bg-transparent pl-2">
+          <img src="public/svg/social-media/social-media-fb.svg" />
+        </a>
+        <a href="https://www.tiktok.com/@tukanginaja" class="btn-social-media hover:bg-transparent pl-2">
+          <img src="public/svg/social-media/social-media-tt.svg" />
+        </a>
       </div>
     </div>
   </div>
-  <!--  END FOOTER DESKTOP -->
 
-  <!-- FOOTER MOBILE  -->
-  <footer class="bg-[#093D77] sans3 lg:hidden block">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-      <div class="md:flex md:justify-between">
-        <div class="mb-6 md:mb-0">
-          <div class="flex items-center space-x-3">
-            <img src="logo.svg" class="h-[50px]" />
-            <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">TukanginAja</span>
-          </div>
-          <div class="h-full my-5">
-            <a href="#" class="hover:underline text-white">
-              <h1 class="text-2xl text-white font-semibold">Tentang Kami</h1>
-            </a>
-            <a href="#" class="hover:underline text-white">
-              <h1 class="text-2xl text-white font-semibold">Blog</h1>
-            </a>
-          </div>
-        </div>
-        <hr class="py-5" />
-        <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-3">
-          <div>
-            <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
-              Kategori
-            </h2>
-            <ul class="text-white font-normal space-y-2">
-              <li>
-                <a href="#" class="hover:underline">
-                  <p>Tukang Ac</p>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="hover:underline">
-                  <p>Massege</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">
-                  <p>Lainya</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
-              Menjadi Mitra
-            </h2>
-            <ul class="text-white font-normal space-y-2">
-              <li>
-                <a href="kontak_kami.html" class="hover:underline">
-                  <p>Cara Menjadi Mitra</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">
-              Hubungi Kami
-            </h2>
-            <ul class="text-white font-normal space-y-2">
-              <li>
-                <a href="kontak_kami.html" class="hover:underline">
-                  <p>Kontak Kami</p>
-                </a>
-              </li>
-
-              <li>
-                <a href="kebijakan.html" class="hover:underline">
-                  <p>Kebijakan Privasi</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">
-                  <p>Lainya</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="sm:flex sm:items-center sm:justify-between bg-white p-4 md:flex-col">
-      <span class="flex justify-center text-[11px] md:text-xl text-black font-semibold">Copyright © 2023 PT JOYO
-        SEJAHTERA SENTOSA EKAPRIMA.
-        <span class="font-thin">All rights reserved.</span>
-      </span>
-      <div class="flex mt-4 justify-center">
-        <a href="https://wa.me/+628113288966?text=Halo%20kak,%20saya%20ingin%20bertanya-tanya%20mengenai%20TukanginAja">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/wa.svg" class="h-[2.5rem]" />
-          </button>
-        </a>
-        <a href="https://www.instagram.com/tukanginajaid?igsh=d2o1OWZ6ZHIyMGIz">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/ig.svg" class="h-[2.5rem]" /></button></a>
-        <a href="https://www.facebook.com/profile.php?id=61553346410387">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/fb.svg" class="h-[2.5rem]" /></button></a>
-        <a href="https://www.tiktok.com/@tukanginaja">
-          <button class="btn btn-ghost hover:bg-transparent">
-            <img src="public/svg/footer/tiktok.svg" class="h-[2.5rem]" /></button></a>
-      </div>
-    </div>
-    </div>
-  </footer>
-
-  <div class="flex flex-row flying items-center hover:opacity-100 opacity-95 cursor-pointer">
-    <div class="hidden mr-[-20px] rounded-full bg-white p-4 h-max box-shadow z-[99] md:flex">
+  <a href="flying_button.html" class="flex flex-row flying items-center hover:opacity-100 opacity-95 cursor-pointer">
+    <div class="hidden mr-[-20px] rounded-full bg-white p-4 h-max box-shadow z-10 md:flex">
       <img src="public/img/message-typing.png" width="30px" height="30px" alt="Message Typing Icon" />
       <span class="ml-3 self-center text-[16px]">Butuh Bantuan</span>
     </div>
@@ -949,20 +533,7 @@
     <div class="rounded-full bg-white p-4 box-shadow">
       <img src="public/img/cs.png" width="50px" alt="Customer Service Icon" />
     </div>
-  </div>
-  <!-- END FOOTER MOBILE -->
-
-  <div class="flex flex-row flying items-center hover:opacity-100 opacity-95 cursor-pointer">
-    <div class="hidden mr-[-20px] rounded-full bg-white p-4 h-max box-shadow z-[99] md:flex">
-      <img src="public/img/message-typing.png" width="30px" height="30px" alt="Message Typing Icon" />
-      <span class="ml-3 self-center text-[16px]">Butuh Bantuan</span>
-    </div>
-    <div class="hidden mr-5 w-[25px] h-[25px] rounded bg-white rotate-45 md:flex"></div>
-    <div class="rounded-full bg-white p-4 box-shadow">
-      <img src="public/img/cs.png" width="50px" alt="Customer Service Icon" />
-    </div>
-  </div>
-  <!-- END FOOTER MOBILE -->
+  </a>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script/swiper.js"></script>
